@@ -1,0 +1,27 @@
+body {
+    padding-top: 100px;
+    background-color: black;
+    text-align: center;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: white;
+    
+}
+body img {
+    height: 500px;
+    width: 500px;
+}
+.intro {
+    color: white;
+    text-align: center;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.skills {
+	color: white;
+}
+#background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}	
