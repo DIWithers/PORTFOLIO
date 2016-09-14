@@ -1,27 +1,116 @@
 body {
-    padding-top: 100px;
-    background-color: black;
-    text-align: center;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    /* background-image: url("images/colorful-board.png"); */
+
+}
+/* .cd-fixed-bg {
+  min-height: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-bg-1 {
+  
+} */
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+/* Background Video */
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+    /* opacity: .5; */
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.intro-container {
+
+    z-index: 100;
+    width: 100%;
+    top: 45%;
+    position: relative;
+    text-align: center;
+    
+}
+#name {
+    font-size: 50px;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+/* ------ */
+
+li:hover {
     color: white;
     
 }
-body img {
-    height: 500px;
-    width: 500px;
-}
-.intro {
+li:active {
     color: white;
-    text-align: center;
-    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+.quote {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 25px 0;
+    padding: 10px;
 }
 .skills {
-	color: white;
+    padding-top: 10%;
 }
-#background {
-	position: fixed;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	min-height: 100%;
-}	
+#projects {
+    border-bottom: 1px solid black;
+}
+#contact {
+    padding-left: 25px;
+}
