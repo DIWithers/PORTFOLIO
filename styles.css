@@ -1,6 +1,11 @@
 body {
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
     /* background-image: url("images/colorful-board.png"); */
+    background-image: url("images/nodes.png");
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    /* height: 1000px; */
+    background-attachment: fixed;
 
 }
 /* .cd-fixed-bg {
@@ -44,6 +49,7 @@ hr.style-seven:before { /* Not really supposed to work, but does */
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
+
 }
 .no-video .video-container .poster,
 .touch .video-container .poster {
@@ -85,6 +91,7 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     position: absolute;
     z-index: 0;
     bottom: 0;
+    
 }
 .video-container video.fillWidth {
     width: 100%;
@@ -100,16 +107,35 @@ li:active {
     text-decoration: underline;
 }
 .quote {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 25px 0;
-    padding: 10px;
+    margin: 0;
+    padding: 60px;
+    color: white;
+    height: 30%;
+    border: 3px solid black;
+    font-size: 25px;
 }
+
 .skills {
     padding-top: 10%;
 }
-#projects {
-    border-bottom: 1px solid black;
+#whiteBoard {
+    border: 6px solid black;
+    overflow: hidden;
+    padding: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-color: white;
+    height: 800px;
+    /* background-attachment: fixed; */
+ 
+}
+#whiteBoard img{
+ 
+
+
+   
+
 }
 #contact {
     padding-left: 25px;

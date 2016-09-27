@@ -4,8 +4,9 @@
 	<title>Danielle Ivy Withers</title>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+<!-- jQuery only incl for video -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script src="scripts.js"></script>
 </head>
@@ -21,7 +22,7 @@
 		</div>
         <!-- <div class="filter"></div> -->
         <video autoplay loop class="fillWidth">
-            <source src="videos/nodes-loop-HD.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="videos/nodes-loop-SD.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             <!-- <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
         </video>
         <div class="poster hidden">
@@ -30,51 +31,47 @@
     </div>
 </div> 
 <div id="navBar">
-	<nav class="navbar navbar-inverse" id="nav">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <!-- <a class="navbar-brand" href="#"><img src="images/dw.png"</a> -->
-	    </div>
+</div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li><a href="#">About</a></li>
-	        <li><a href="#skills">New Skills</a></li>
-	        <li><a href="#projects">Projects</a></li>
-	        <li><a href="#contact">Contact</a></li>
-	        <li><a href="#">Resume</a></li>
 
-	      </ul>
-	 
-	      <ul class="nav navbar-nav navbar-right">
-	  		
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
 
-	<div class="col-md-12">
-		<div class="col-md-4">
-		<img src="images/dev-tree.png">
-		</div>
-		<div class="col-md-6 skills" id="skills">
-			<h2>New skills learned in code school</h2>
-		</div>
+	
+	<div class="col-md-12 quote">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h5>Nikola Tesla</h5>
 	</div>
+	<div class="wrapper">
+	<div class="col-md-12" id="whiteBoard"><!-- <img src="images/white_board_and_brick.jpg"> -->	
+		<nav class="navbar" id="nav">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <!-- <a class="navbar-brand" href="#"><img src="images/dw.png"</a> -->
+		    </div>
 
-	<div class="col-md-12 quote"><h4>I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.</h4> <h5>Nikola Tesla</h5>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">About</a></li>
+		        <li><a href="#skills">New Skills</a></li>
+		        <li><a href="#projects">Projects</a></li>
+		        <li><a href="#contact">Contact</a></li>
+		        <li><a href="#">Resume</a></li>
+
+		      </ul>
+		 
+		      <ul class="nav navbar-nav navbar-right">
+		  		
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 	</div>
-
-	<div class="col-md-12" id="projects">Projects Placeholder </div>
-	<div class="col-md-12" id="contact">
+<!-- 	<div class="col-md-12" id="contact">
 		<h2>Contact Me</h2>
 		<form action="mail.php" method="post">
 		  <h4>Name</h4>
@@ -86,8 +83,8 @@
 	      <br>
 	      <button type="submit" class="btn btn-default">Send</button>
 		</form>
-	</div>
-</div>
+	</div> -->
+
 
 
 
