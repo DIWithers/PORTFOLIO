@@ -1,11 +1,12 @@
 body {
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
     /* background-image: url("images/colorful-board.png"); */
-    background-image: url("images/nodes.png");
+    background-image: url("images/nodes-opac.png");
     /* background-size: 100%; */
     background-repeat: no-repeat;
     /* height: 1000px; */
     background-attachment: fixed;
+
 
 }
 /* .cd-fixed-bg {
@@ -20,25 +21,8 @@ body {
   
 } */
 
-/* Flaired edges, by Tomas Theunissen */
 
-hr.style-seven {
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-}
-hr.style-seven:before { /* Not really supposed to work, but does */
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color: black;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-}
+
 /* Background Video */
 .homepage-hero-module {
     border-right: none;
@@ -64,6 +48,9 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     overflow: hidden;
     background: #000;
 }
+#nav {
+    background-color: rgba(240, 240, 240, .9);
+}
 .intro-container {
 
     z-index: 100;
@@ -74,7 +61,7 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     
 }
 #name {
-    font-size: 50px;
+    font-size: 10vh;
 }
 .video-container .poster img {
     width: 100%;
@@ -96,6 +83,16 @@ hr.style-seven:before { /* Not really supposed to work, but does */
 .video-container video.fillWidth {
     width: 100%;
 }
+.video-background{
+  position: relative;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
 /* ------ */
 
 li:hover {
@@ -109,30 +106,51 @@ li:active {
 .quote {
     margin: 0;
     padding: 60px;
-    color: white;
+    color: lightgrey;
     height: 30%;
-    border: 3px solid black;
-    font-size: 25px;
-    font-family: 'Yatra One', cursive;
+    /* border: 10px solid black; */
+    /* border-bottom: 1px solid black; */
+    /* border-top: 10px solid black; */
+    font-size: 5vh;
+    font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-align: center;
 }
-
+.about {
+    background-color: rgba(240, 240, 240, .9);
+    height: 75vh;
+    padding: 5%;
+    font-size: 25px;
+}
+.about img {
+    height: 25%;
+    /* transform: rotate(-7deg); */
+}
 .skills {
     padding-top: 10%;
 }
-#whiteBoard {
-    border: 10px solid black;
+.skills-image {
+    /* background-color: rgba(240, 240, 240, .9); */
+    background-color: white;
+    text-align: center;
+
+}
+/* #whiteBoard {
+    border: 10px solid gray;
     overflow: hidden;
     padding: 0;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 1000px;
     background-color: white;
     height: 800px;
     font-family: 'Yatra One', cursive;
     font-size: 20px;
-    /* background-attachment: fixed; */
+    overflow: hidden;
  
 }
+.outer-whiteBoard {
+    border: 14px solid black;
+    padding: 0;
+} */
 #markers img{
   max-height: 20%;
   position: absolute;
@@ -141,22 +159,38 @@ li:active {
 
 }
 .bio-wrapper {
-    width: 50%;
-    height: 50%;
     text-align:  center;
     margin:  auto;
+    padding-top: 30px;
 }
 .bio {
     display: inline-block;
     float: left;
+    /* border: 1px solid black; */
+    box-shadow: 5px;
 }
 .bio-pic {
-    float: right;
+text-align: center;
+height: 75%;
     
 }
 .bio-pic img {
     border-radius: 100px;
-    border: 7px solid black;
+    /* border: 2px solid black; */
+    width: 75%;
+    /* box-shadow: 2px 5px 5px black; */
+    
+}
+.skills {
+   font-size: 40px;
+   text-align: center;
+   vertical-align: text-top;
+   color: lightgrey;
+   padding: 5%;
+}
+.skills img {
+
+
 }
 #contact {
     padding-left: 25px;

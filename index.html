@@ -18,67 +18,85 @@
 </head>
 
 <body data-spy="scroll" data-target="#nav">
+	
+	<!-- Background Video -->
+	<div class="homepage-hero-module" id="introVideo">
+	    <div class="video-container">
+	        <!-- <div class="filter"></div> -->
+	        <video autoplay loop class="fillWidth video-background">
+	            <source src="videos/nodes-loop-SD.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	            <!-- <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+	        </video>
+	        <div class="poster hidden">
+	            <!-- <img src="PATH_TO_JPEG" alt=""> -->
+	        </div>
+	        <div class="intro-container">
+	    		<h1 id="name"><strong>Danielle Ivy Withers</strong></h1>
+				<h3>Full stack web developer</h3>
+			</div>
+	    </div>
+	</div> 
+	<div id="navBar">
+			<nav class="navbar navbar-fixed-top" id="nav">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <!-- <a class="navbar-brand" href="#"><img src="images/dw.png"</a> -->
+			    </div>
 
-<!-- Background Video -->
-<div class="homepage-hero-module" id="introVideo">
-    <div class="video-container">
-    	<div class="intro-container">
-    		<h1 id="name"><strong>Danielle Ivy Withers</strong></h1>
-			<h3>Full stack web developer</h3>
-		</div>
-        <!-- <div class="filter"></div> -->
-        <video autoplay loop class="fillWidth">
-            <source src="videos/nodes-loop-SD.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <!-- <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
-        </video>
-        <div class="poster hidden">
-            <!-- <img src="PATH_TO_JPEG" alt=""> -->
-        </div>
-    </div>
-</div> 
-<div id="navBar">
-</div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a ng-href="#">About</a></li>
+			        <li><a ng-href="#skills">New Skills</a></li>
+			        <li><a ng-href="#projects">Projects</a></li>
+			        <li><a ng-href="#contact">Contact</a></li>
+			        <li><a href="#">Resume</a></li>
 
-
-	<div class="col-md-12 quote">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h5>Nikola Tesla</h5>
+			      </ul>
+			 
+			      <ul class="nav navbar-nav navbar-right">
+			  		
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
 	</div>
+
+
+	<div class="row quote">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h4>Nikola Tesla</h4>
+	</div>
+
+	<div class="row about">
+		<div class="row bio-wrapper">
+			<div class="col-md-3">
+				<img src="images/about.png">
+			</div>
+			<div class="col-md-6  bio">
+				<p>
+				I am a full stack web developer currently living in Atlanta, GA. I will always be a life-long learner and enjoy problem solving in creative ways. In all areas of life: if it doesn't exist the way I want it - I will build it. I enjoy the challenges that programming brings and find beauty in the balance between elegance and readability.
+				</p>
+			</div>
+			<div class="col-md-3 bio-pic"><img src="images/profile-pic.jpeg"></div>
+		</div>
+	</div>
+	<div class="row skills"><p>New Skills Learned @ DigitalCrafts</p></div>
+	<div class="skills-image"><img src="images/computer-skills.png"</div>
+	<div class="col-md-12 outer-whiteBoard">
+		<div class="col-md-12" id="whiteBoard">
+			<h2>Projects</h2>
+
+		<!-- whiteboard? -->
+	<!-- <div ng-view ng-controller="mainController"></div> -->
+		<!-- <div id="markers"><img src="images/hori-marker-holder.jpg"></div> -->
 	
-	<div class="col-md-12" id="whiteBoard">
-		<nav class="navbar" id="nav">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <!-- <a class="navbar-brand" href="#"><img src="images/dw.png"</a> -->
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li><a ng-href="#">About</a></li>
-		        <li><a ng-href="#skills">New Skills</a></li>
-		        <li><a ng-href="#projects">Projects</a></li>
-		        <li><a ng-href="#contact">Contact</a></li>
-		        <li><a href="#">Resume</a></li>
-
-		      </ul>
-		 
-		      <ul class="nav navbar-nav navbar-right">
-		  		
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-	<div ng-view ng-controller="mainController"></div>
-		
-
-		<div id="markers"><img src="images/hori-marker-holder.jpg"></div>
-	
+		</div>
 	</div>
 <!-- 	<div class="col-md-12" id="contact">
 		<h2>Contact Me</h2>
