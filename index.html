@@ -36,68 +36,77 @@
 			</div>
 	    </div>
 	</div> 
+	<!-- End video -->
 	<div id="navBar">
-			<nav class="navbar navbar-fixed-top" id="nav">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <!-- <a class="navbar-brand" href="#"><img src="images/dw.png"</a> -->
-			    </div>
+		<nav class="navbar navbar-fixed-top" id="nav">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <!-- <a class="navbar-brand" href="#"><img src="images/dw.png"</a> -->
+		    </div>
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li><a ng-href="#">About</a></li>
-			        <li><a ng-href="#skills">New Skills</a></li>
-			        <li><a ng-href="#projects">Projects</a></li>
-			        <li><a ng-href="#contact">Contact</a></li>
-			        <li><a href="#">Resume</a></li>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a ng-href="#">About</a></li>
+		        <li><a ng-href="#skills">New Skills</a></li>
+		        <li><a ng-href="#projects">Projects</a></li>
+		        <li><a ng-href="#contact">Contact</a></li>
+		        <li><a href="#">Resume</a></li>
 
-			      </ul>
-			 
-			      <ul class="nav navbar-nav navbar-right">
-			  		
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
+		      </ul>
+		 
+		      <ul class="nav navbar-nav navbar-right">
+		  		
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 	</div>
 
+	<div class="container-fluid">
+		<div class="row quote">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h4>Nikola Tesla</h4>
+		</div>
 
-	<div class="row quote">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h4>Nikola Tesla</h4>
-	</div>
-
-	<div class="row about">
-		<div class="row bio-wrapper">
-			<div class="col-md-3">
+		<div class="row about">
+		
+			<div class="col-xs-12 col-sm-3 col-md-3">
 				<img src="images/about.png">
 			</div>
-			<div class="col-md-6  bio">
+			<div class=" col-xs-12 col-sm-6 col-md-6 bio">
 				<p>
 				I am a full stack web developer currently living in Atlanta, GA. I will always be a life-long learner and enjoy problem solving in creative ways. In all areas of life: if it doesn't exist the way I want it - I will build it. I enjoy the challenges that programming brings and find beauty in the balance between elegance and readability.
 				</p>
 			</div>
-			<div class="col-md-3 bio-pic"><img src="images/profile-pic.jpeg"></div>
-		</div>
-	</div>
-	<div class="row skills"><p>New Skills Learned @ DigitalCrafts</p></div>
-	<div class="skills-image"><img src="images/computer-skills.png"</div>
-	<div class="col-md-12 outer-whiteBoard">
-		<div class="col-md-12" id="whiteBoard">
-			<h2>Projects</h2>
+			<div class="col-xs-12 col-sm-3 col-md-3 bio-pic"><img src="images/profile-pic.jpeg"></div>
+		</div> <!-- end about -->
 
-		<!-- whiteboard? -->
-	<!-- <div ng-view ng-controller="mainController"></div> -->
-		<!-- <div id="markers"><img src="images/hori-marker-holder.jpg"></div> -->
-	
+		<div class="row skills"><p>New Skills Learned @ DigitalCrafts</p></div>
+		<div class="row skills-image"><img src="images/computer-skills-complete.png"></div>
+
+	<!-- &&&&&&&&&&&- -->
+		<div class="row outer-whiteBoard" ng-controller="mainController">
+			<div id="whiteBoard">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 indiv" ng-scope ng-repeat="project in portfolio" ng-mouseenter="hoverIn(project.cover)">
+					<div class="" data-cover="{{project.cover}}">
+						<img src="{{project.coverSmall}}" data-path="{{project.coverSmall}}">
+					<div class="title-cover">
+						<h3>{{project.projectName}}</h3>
+					</div>	
+					</div>
+					
+				</div>
+			</div>
 		</div>
-	</div>
+	</div> <!-- end container -->
+	
+	
 <!-- 	<div class="col-md-12" id="contact">
 		<h2>Contact Me</h2>
 		<form action="mail.php" method="post">
