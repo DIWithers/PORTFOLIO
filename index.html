@@ -10,6 +10,7 @@
 <script src="module.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="icon" href="images/dw.ico">
 <script src="angular-route.js"></script>
 
 <script type="text/javascript" src="mainController.js"></script>
@@ -48,13 +49,13 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <!-- <a class="navbar-brand" href="#"><img src="images/dw.png"</a> -->
+		      <a class="navbar-brand" href="#"><img src="images/dw.png"</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li><a ng-href="#">About</a></li>
+		        <li><a ng-href="#about">About</a></li>
 		        <li><a ng-href="#skills">New Skills</a></li>
 		        <li><a ng-href="#projects">Projects</a></li>
 		        <li><a ng-href="#contact">Contact</a></li>
@@ -71,7 +72,7 @@
 	</div>
 
 	<div class="container-fluid">
-		<div class="row quote">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h4>Nikola Tesla</h4>
+		<div class="row quote" id="about">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h4>Nikola Tesla</h4>
 		</div>
 
 		<div class="row about">
@@ -87,39 +88,48 @@
 			<div class="col-xs-12 col-sm-3 col-md-3 bio-pic"><img src="images/profile-pic.jpeg"></div>
 		</div> <!-- end about -->
 
-		<div class="row skills"><p>New Skills Learned @ DigitalCrafts</p></div>
+		<div class="row skills" id="skills"><p>New Skills Learned @ DigitalCrafts</p><p class="small"><a href="http://www.digitalcrafts.com"><em>A 16-week immersive full stack boot camp</em></a></p></div>
 		<div class="row skills-image"><img src="images/computer-skills-complete.png"></div>
 
 	<!-- &&&&&&&&&&&- -->
-		<div class="row outer-whiteBoard" ng-controller="mainController">
-			<div id="whiteBoard">
+		<div class="row outer-whiteBoard" id="projects" ng-controller="mainController">
+			<div class="row" id="whiteBoard">
+			<div>
+			<h2>Projects</h2>
+			</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 indiv" ng-scope ng-repeat="project in portfolio" ng-mouseenter="hoverIn(project.cover)">
 					<div class="" data-cover="{{project.cover}}">
-						<img src="{{project.coverSmall}}" data-path="{{project.coverSmall}}">
+						<img src="{{project.coverSmall}}" data-path="{{project.coverSmall}}">	
+					</div>
 					<div class="title-cover">
 						<h3>{{project.projectName}}</h3>
-					</div>	
 					</div>
 					
 				</div>
 			</div>
 		</div>
+		<canvas id="canv">
+		</canvas>
+		<div class="bottom-wrapper">
+			<div class="col-md-12" id="contact">
+				<h2>Contact Me</h2>
+				<form action="mail.php" class="forms" method="post">
+		  		<h4>Name</h4>
+	      		<input type="text" name="fullName" placeholder="Enter your full name" size="50">
+	      		<h4>Email</h4>
+	      		<input type="email" name="email" placeholder="Enter your email address" size="50">
+	      		<h4>Message</h4>
+	      		<textarea name="body" size="100"></textarea>
+	      		<br>
+	      		<button type="submit" class="btn btn-default">Send</button>
+				</form>
+			</div>
+			</div>
+	
+
 	</div> <!-- end container -->
 	
-	
-<!-- 	<div class="col-md-12" id="contact">
-		<h2>Contact Me</h2>
-		<form action="mail.php" method="post">
-		  <h4>Name</h4>
-	      <input type="text" name="fullName" placeholder="Enter your full name">
-	      <h4>Email</h4>
-	      <input type="email" name="email" placeholder="Enter your email address">
-	      <h4>Message</h4>
-	      <textarea name="body"></textarea>
-	      <br>
-	      <button type="submit" class="btn btn-default">Send</button>
-		</form>
-	</div> -->
+
 
 
 

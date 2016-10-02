@@ -13,6 +13,7 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
+
 }
 /* .cd-fixed-bg {
   min-height: 50%;
@@ -55,6 +56,13 @@ body {
 }
 #nav {
     background-color: rgba(240, 240, 240, .9);
+}
+#nav li {
+  color: rgb(20, 17, 114);
+}
+
+.navbar-brand img {
+  height: 30px;
 }
 .intro-container {
 
@@ -99,6 +107,9 @@ body {
   z-index: -100;
 }
 /* ------ */
+li {
+
+}
 
 li:hover {
     color: white;
@@ -109,13 +120,14 @@ li:active {
     text-decoration: underline;
 }
 .quote {
-    margin: 0;
+    background-color: rgba(20, 17, 114, .5);
     padding: 60px;
     color: lightgrey;
     height: 30%;
     font-size: 4vh;
     font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
     text-align: center;
+   
 }
 .about {
     background-color: rgba(240, 240, 240, .9);
@@ -137,16 +149,15 @@ li:active {
 
 #whiteBoard {
     border: 16px solid gray;
-    overflow: hidden;
     padding: 0;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
-    height: 800px;
+    height: 87vh;
     font-family: 'Yatra One', cursive;
     font-size: 20px;
     overflow: hidden;
- 
+    margin: 0;
 }
 .outer-whiteBoard {
     border: 14px solid black;
@@ -167,18 +178,48 @@ li:active {
    vertical-align: text-top;
    color: lightgrey;
    padding: 5%;
-
-
+   background-color: rgba(20, 17, 114, .5);
+}
+.small {
+  font-size: 20px;
 }
 .skills-image {
     
 background-color: white;
 text-align: center;
 padding: 5%;
+padding-top: 3%;
 
 }
 
+.slant {
+  transform: rotate(-7deg);
+  z-index: 1000;
+  position: relative;
 
+}
+#canv {
+    z-index: -1000;
+    position: absolute;
+    top: 380%;
+}
 #contact {
-    padding-left: 25px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    padding-left: 15%;
+    z-index: 1000;
+    top: 390%;
+    height: 90%;
+    color: lightgray;
+    background-color:rgba(20, 17, 114, .3);
+    border-radius: 10px;
 }
+.forms {
+  height: 5%;
+}
+/* #footer {
+  position: absolute;
+  top: 390vh;
+} */
