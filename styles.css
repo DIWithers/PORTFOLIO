@@ -145,10 +145,11 @@ li:active {
   height: 38px;
 
 }
+
 .bio-border {
   border: 3px solid black;
   border-radius: 10px;
-  height: 400px;
+  height: 90%;
   border-radius: 5px;
   background-image: url("images/green-circuit-board-vector-background.jpg");
 }
@@ -159,12 +160,16 @@ li:active {
   border-radius: 10px;
   margin-bottom: 0px;
   padding: 0px;
+  /* height: 80%; */
 }
 .bio-inner2 {
   margin-top: 5px;
   padding: 5px;
 }
-
+.paddingB {
+  
+  padding: 5px 0px 40px 5px;
+}
 
 
 .bio-pic img {
