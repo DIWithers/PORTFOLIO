@@ -75,27 +75,58 @@
 		<div class="row quote" id="about">I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.<h4>Nikola Tesla</h4>
 		</div>
 
-		<div class="row about">
+		<div class="container-fluid about">
+			
+
+			<div class="col-md-5 col-md-offset-1 bio-border">
+				<div class="col-md-12 bio-inner">
+					<div class="row padding">
+						<div class="col-md-8 left"><strong>Class: Software Engineer</strong></div>
+						<div class="col-md-3"><strong>Lvl 33</strong></div>
+					</div>
+					<div class="col-md-6 bio-pic"><img src="images/profile-pic.jpeg"></div>
+					<div class="col-md-6"><em><h4>Web Development</h4><hr><h4>App Development</h4><hr><h4>Game Development</h4><hr></em></div>
+					<div class="col-md-12 left"><p><strong>Special Abilities</strong></p>
+						<div class="col-md-5 list left"><em><p>Laser Focus</p><p>Problem Solver</p><p>Calm Under Stress</p></em></div>
+						<div class="col-md-7 list">PowerUp Combo:<img src="images/glossyCup.png">+ <img src="images/computerTransparent.png"><p>Loves: Hackathons && IoT</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 bio-border">
+				<div class="bio-inner">
+					<div class="row padding stars">
+						<div class="col-md-12"><strong>Stats</strong></div>
+						<div class="list">
+							<div class="col-md-4">Strength<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Creativity<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Confidence<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Discipline<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Empathy<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Willpower<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Intelligence<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Charisma<img src="images/starsFour.png"></div>
+							<div class="col-md-4">Philomath<img src="images/starsFive.png"></div>
+						</div>
+					</div>
+				</div>
+				<div class="bio-inner bio-inner2">
+					<p class="list">With a background in telecommunications, this software engineer has always had a love for technology. It was when she discovered programming that she truly found her calling.</p>
+					<p class="list">There is no greater euphoria than to face something seemingly insurmountable, use your wits to come up with a solution, and come out smarter than you started.</p>
+					<p class="list">Recent Achievments: <a href="http://www.digitalcrafts.com/blog/digitalcrafts-students-win-first-place-atl-goodie-hack-gentrification">First Place @ The Goodie Nation Hackathon</a></p>
+				</div>
+			</div>
 		
-			<div class="col-xs-12 col-sm-3 col-md-3">
-				<img src="images/about.png">
-			</div>
-			<div class=" col-xs-12 col-sm-6 col-md-6 bio">
-				<p>
-				I am a full stack web developer currently living in Atlanta, GA. I will always be a life-long learner and enjoy problem solving in creative ways. In all areas of life: if it doesn't exist the way I want it - I will build it. I enjoy the challenges that programming brings and find beauty in the balance between elegance and readability.
-				</p>
-			</div>
-			<div class="col-xs-12 col-sm-3 col-md-3 bio-pic"><img src="images/profile-pic.jpeg"></div>
 		</div> <!-- end about -->
 
-		<div class="row skills" id="skills"><p>New Skills Learned @ DigitalCrafts</p><p class="small"><a href="http://www.digitalcrafts.com"><em>A 16-week immersive full stack boot camp</em></a></p></div>
+		<div class="row skills" id="skills"><p>New Skills Learned @ Full Stack Boot Camp</p><p class="small"><a href="http://www.digitalcrafts.com"><em>Explore the Curriculum @ DigitalCrafts</em></a></p></div>
 		<div class="row skills-image"><img src="images/computer-skills-complete.png"></div>
 
 	<!-- &&&&&&&&- -->
 		<div class="row outer-whiteBoard" id="projects" ng-controller="mainController">
 			<div class="row" id="whiteBoard">
 			<div>
-			<h2>Projects</h2>
+			<h2>Welcome to my Whiteboard!</h2>
 			</div>
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 indiv" ng-scope ng-repeat="project in portfolio" ng-mouseenter="hoverIn(project.cover)">
 					<div class="" data-cover="{{project.cover}}">
@@ -108,24 +139,25 @@
 				</div>
 			</div>
 		</div>
-		<canvas id="canv">
-		</canvas>
-		<div class="bottom-wrapper">
-			<div class="col-md-12" id="contact">
-				<h2>Contact Me</h2>
-				<form action="mail.php" class="forms" method="post">
-		  		<h4>Name</h4>
-	      		<input type="text" name="fullName" placeholder="Enter your full name" size="50">
-	      		<h4>Email</h4>
-	      		<input type="email" name="email" placeholder="Enter your email address" size="50">
-	      		<h4>Message</h4>
-	      		<textarea name="body" size="100"></textarea>
-	      		<br>
-	      		<button type="submit" class="btn btn-default">Send</button>
-				</form>
+		<div>
+			<canvas id="canv">
+			</canvas>
+			<div class="bottom-wrapper">
+				<div class="col-md-12" id="contact">
+					<h2>Contact Me</h2>
+					<form action="mail.php" class="forms" method="post" >
+			  		<h4>Name</h4>
+		      		<input type="text" name="fullName" placeholder="Enter your full name" class="black">
+		      		<h4>Email</h4>
+		      		<input type="email" name="email" placeholder="Enter your email address" class="black">
+		      		<h4>Message</h4>
+		      		<textarea name="body" class="black" cols="20" rows="7"></textarea>
+		      		<br>
+		      		<button type="submit" class="btn btn-default">Send</button>
+					</form>
+				</div>
 			</div>
-			</div>
-	
+		</div>
 
 	</div> <!-- end container -->
 	
