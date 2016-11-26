@@ -125,11 +125,12 @@ li:active {
     background-color: rgba(100, 150, 100, .7);
     padding: 50px;
     color: black;
-    height: 30%;
+    height: 400px;
     width: 100%;
     font-size: 30px;
     font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
     text-align: center;
+    padding-top: 10%;
     margin: 0px;
    
 }
@@ -150,12 +151,12 @@ li:active {
   border: 3px solid black;
   border-radius: 10px;
   height: 90%;
-  border-radius: 5px;
+  border-radius: 8px;
   background-image: url("images/green-circuit-board-vector-background.jpg");
 }
 .bio-inner {
   background-color: rgba(240, 240, 240,.8);
-  margin: 20px 0px;
+  margin-top: 25px;
   border: 2px solid black;
   border-radius: 10px;
   margin-bottom: 0px;
@@ -168,7 +169,7 @@ li:active {
 }
 .paddingB {
   
-  padding: 5px 0px 40px 5px;
+  /* padding: 5px 0px 40px 5px; */
 }
 
 
@@ -264,6 +265,8 @@ padding-top: 3%;
 }
 input, textarea {
   width: 400px;
+  border-radius: 2px;
+  border: 1px solid gray;
   
 }
 .black {

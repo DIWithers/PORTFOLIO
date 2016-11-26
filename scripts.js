@@ -1,12 +1,12 @@
-$(window).load(function() {
-var videoHeight = $("#introVideo").height();
-var navBarHeight = $("#navBar").height();
-var skillsHeight = $("#skills").height() + videoHeight;
-var quoteHeight = $("#quote").height();
-var projectsHeight = $("#projects").height() + skillsHeight + quoteHeight;
-var aboutHeight = $("#aboutMe").height() + projectsHeight;
+// $(window).load(function() {
+// var videoHeight = $("#introVideo").height();
+// var navBarHeight = $("#navBar").height();
+// var skillsHeight = $("#skills").height() + videoHeight;
+// var quoteHeight = $("#quote").height();
+// var projectsHeight = $("#projects").height() + skillsHeight + quoteHeight;
+// var aboutHeight = $("#aboutMe").height() + projectsHeight;
 
-});
+// });
 
 
 // Background Video 
@@ -75,6 +75,20 @@ function scaleBannerVideoSize(element){
 
 /////-------end video script
 
+////-----Nav Controls
+var topAtLoad = (window.innerHeight);
+$(window).bind('scroll', function() {
+    console.log(topAtLoad);
+    if ($(window).scrollTop() > innerHeight) {
+        $("#navBar").removeClass("navbar-top");
+        $("#navBar").addClass("navbar-fixed-top");
+        $("#navBar").fadeIn(2000).css("display", "visible");
+    }
+    else {
+        $("#navBar").fadeOut(1000).hide(1000);
+    }
+})
+////----end Nav Controls
 
 ////--------nodes canvas
   window.requestAnimFrame = function()
