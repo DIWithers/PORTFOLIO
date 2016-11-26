@@ -85,7 +85,7 @@ $(window).bind('scroll', function() {
         $("#navBar").fadeIn(2000).css("display", "visible");
     }
     else {
-        $("#navBar").fadeOut(1000).hide(1000);
+        $("#navBar").fadeOut(2000).hide(2000);
     }
 })
 ////----end Nav Controls
