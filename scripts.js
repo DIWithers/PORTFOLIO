@@ -12,10 +12,16 @@
 //jQuery is required to run this code
 $( document ).ready(function() {
 
+    //make sure screen is fully loaded before pre-load screen disappears
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        
+    }, 1000);
+
     //Keep navbar from showing on Load
     $(window).bind('load', function() {
         $("#navBar").hide();
-    });///////////end
+    });
 
     scaleVideoContainer();
 
