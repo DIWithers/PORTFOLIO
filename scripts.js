@@ -8,10 +8,14 @@
 
 // });
 
-
 // Background Video 
 //jQuery is required to run this code
 $( document ).ready(function() {
+
+    //Keep navbar from showing on Load
+    $(window).bind('load', function() {
+        $("#navBar").hide();
+    });///////////end
 
     scaleVideoContainer();
 
@@ -76,9 +80,11 @@ function scaleBannerVideoSize(element){
 /////-------end video script
 
 ////-----Nav Controls
+
 var topAtLoad = (window.innerHeight);
 $(window).bind('scroll', function() {
-    console.log(topAtLoad);
+    console.log(innerHeight);
+
     if ($(window).scrollTop() > innerHeight) {
         $("#navBar").removeClass("navbar-top");
         $("#navBar").addClass("navbar-fixed-top");
