@@ -1,12 +1,3 @@
-// $(window).load(function() {
-// var videoHeight = $("#introVideo").height();
-// var navBarHeight = $("#navBar").height();
-// var skillsHeight = $("#skills").height() + videoHeight;
-// var quoteHeight = $("#quote").height();
-// var projectsHeight = $("#projects").height() + skillsHeight + quoteHeight;
-// var aboutHeight = $("#aboutMe").height() + projectsHeight;
-
-// });
 
 // Background Video 
 //jQuery is required to run this code
