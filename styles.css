@@ -57,6 +57,9 @@ a.arrow-down {
 .center {
 	text-align: center;
 }
+.space {
+	margin-top: 20px;
+}
 
 /* ----------------------Pre-load screen modified--------------------- */
 #loader-wrapper {
@@ -294,9 +297,23 @@ a.arrow-down {
 		border: 5px solid black;
 		border-radius: 5px;
 	}
+	.statsLine2 {
+		margin-top: 80px;
+	}
+	.statsLine3 {
+		margin-top: 20px;
+		margin-left: 20px;
+		padding-bottom: 15px;
+	}
 	.f1 {
-		font-size: 50px;
+		font-size: 40px;
 		text-align: center;
+	}
+	.f3 {
+		font-size: 30px;
+	}
+	.powerUp img {
+		height: 80px;
 	}
 
 
