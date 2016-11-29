@@ -284,6 +284,9 @@ a.arrow-down {
   		margin-top: 5%;
   		background-image: url("images/green-circuit-board-vector-background.jpg");
 	}
+	.bio-border2 {
+		margin-top: 0px;
+	}
 
 	.bio-inner {
   		background-color: rgba(240, 240, 240,.9);
@@ -312,10 +315,18 @@ a.arrow-down {
 	.f3 {
 		font-size: 30px;
 	}
+	.f4 {
+		font-size: 25px;
+	}
 	.powerUp img {
 		height: 80px;
 	}
-
+	.stars img {
+		height: 30px;
+	}
+	.stats {
+		padding: 15px;
+	}
 
 }
 
