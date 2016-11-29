@@ -202,6 +202,9 @@ body {
 	#quote {
 		height: 100%;
 	}
+	video {
+		visibility: hidden;
+	}
 } 
 
 
@@ -213,8 +216,22 @@ body {
 	#main {
 		background-color: grey;
 	}
-	#main img {
-		margin-top: 100px;
+	#main > img {
+		/* margin-top: 100px;
+		position: static; */
+	}
+	#main-title {
+		position: static;
+	}
+	#quote {
+		background-color: rgba(100, 150, 100, .9);
+		font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
+		text-align: center;
+		padding: 5% 10%;
+
+	}
+	video {
+		visibility: hidden;
 	}
 
 }
