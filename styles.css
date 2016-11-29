@@ -51,6 +51,12 @@ a.arrow-down {
 	position: absolute;
 
 }
+.bold {
+	font-weight: 900;
+}
+.center {
+	text-align: center;
+}
 
 /* ----------------------Pre-load screen modified--------------------- */
 #loader-wrapper {
@@ -238,6 +244,7 @@ a.arrow-down {
 		font-size: 55px;
 	}
 
+
 	h3 {
 		font-size: 30px;
 	}
@@ -271,16 +278,25 @@ a.arrow-down {
 	.bio-border {
   		border: 3px solid black;
   		border-radius: 8px;
+  		margin-top: 5%;
   		background-image: url("images/green-circuit-board-vector-background.jpg");
-  		/* height: 45vh; */
-
 	}
 
 	.bio-inner {
   		background-color: rgba(240, 240, 240,.9);
   		border: 2px solid black;
   		border-radius: 10px;
+  		margin: 1%;
   		/* height: 80%; */
+	}
+	.profilePic img {
+		height: 300px;
+		border: 5px solid black;
+		border-radius: 5px;
+	}
+	.f1 {
+		font-size: 50px;
+		text-align: center;
 	}
 
 
