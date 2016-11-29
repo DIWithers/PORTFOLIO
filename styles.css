@@ -1,6 +1,6 @@
 body {
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-    /* background-image: url("images/nodescompact.png"); */
+    background-image: url("images/nodescompact.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,7 +10,8 @@ body {
      
 }
 .container-fluid {
-	/* width: 100%; */
+	width: 100%;
+	margin: 0px;
 }
 #main {
 	text-align: center;
@@ -187,50 +188,54 @@ body {
 	
 	/* MYNAME */
 }
-@media (max-width: 768px) and (min-width:500px) {
+@media (max-device-width: 768px) and (min-device-width:500px) {
 	#main {
-		background-image: url("images/colorful-board.png");
-		background-repeat: no-repeat;
-		height: 100vh;
+
 	}
 	#main > img {
-		margin-top: 50px;
+		position: static;
 	}
 	#main-title {
-		position: static;
+		
 	}
 	#quote {
 		height: 100%;
 	}
-	video {
+	/* #video-background {
 		visibility: hidden;
-	}
+	} */
 } 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
 	html {
 		min-height: 100%;
 		min-width: 100%;
 	}
 	#main {
-		background-color: grey;
+		background-image: url("images/officeKeyboard.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		color: black;
 	}
 	#main > img {
 		/* margin-top: 100px;
 		position: static; */
 	}
 	#main-title {
+		margin-top: 120px;
 		position: static;
+		color: black;
 	}
 	#quote {
+		position: relative;
 		background-color: rgba(100, 150, 100, .9);
 		font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
 		text-align: center;
 		padding: 5% 10%;
 
 	}
-	video {
+	#video-background {
 		visibility: hidden;
 	}
 
