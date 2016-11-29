@@ -10,16 +10,17 @@ body {
      
 }
 .container-fluid {
-	width: 100%;
+	/* width: 100%; */
 }
 #main {
 	text-align: center;
 	margin: -2.5px; /* weird margin gap fixed */
+	height: 100vh;
 
 }
 #main-title {
 	position: absolute;
-	top: 20%;
+	top: 450px;
 	left: 34%;
 	text-align: center;
 	color: black;
@@ -32,8 +33,8 @@ body {
 	padding: 5% 10%;
 
 }
-.video-background{
-	  position: relative;
+#video-background{
+	  position: fixed;
 	  right: 0; 
 	  bottom: 0;
 	  min-width: 100%; 
@@ -180,26 +181,42 @@ body {
 }
 
 /* -------------------------Background Video------------------------------ */
+/* -------------------------Background Video END------------------------------ */
 @media screen and (min-width: 768px) {
 
 	
 	/* MYNAME */
 }
-@media screen and (max-width: 768px) and (min-width:500px) {
+@media (max-width: 768px) and (min-width:500px) {
 	#main {
 		background-image: url("images/colorful-board.png");
 		background-repeat: no-repeat;
+		height: 100vh;
+	}
+	#main > img {
+		margin-top: 50px;
 	}
 	#main-title {
 		position: static;
 	}
-} 
-/* -------------------------Background Video END------------------------------ */
-
-@media screen and (max-width: 768px) {
-	#introVideo {
-		
+	#quote {
+		height: 100%;
 	}
+} 
+
+
+@media screen and (max-width: 500px) {
+	html {
+		min-height: 100%;
+		min-width: 100%;
+	}
+	#main {
+		background-color: grey;
+	}
+	#main img {
+		margin-top: 100px;
+	}
+
 }
 
 
