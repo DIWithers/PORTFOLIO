@@ -213,7 +213,7 @@ a.arrow-down {
 	
 	/* MYNAME */
 }
-@media (max-device-width: 1300px) and (min-device-width:500px) {
+@media (max-device-width: 768px) and (min-device-width:500px) {
 	#video-container {
 		height: 100vh;
 		position: relative;
@@ -255,15 +255,14 @@ a.arrow-down {
 		
 	}
 	h2 {
-		font-size: 30px;
+		font-size: 45px;
 	}
 
 	h3 {
-		font-size: 20px;
+		font-size: 30px;
 	}
 	#quote {
 		height: 100vh;
-		font-size: 30px;
 		vertical-align: center;
 	}
 	#quote h2 {
@@ -293,12 +292,36 @@ a.arrow-down {
 	.bio-inner1 {
 		height: 96%;
 	}
+	.bio-inner2 {
+		padding-top: 1%;
+	}
 	.f1 {
-		font-size: 22px;
+		font-size: 40px;
 		margin-top: 20px;
+	}
+	.f2 {
+		font-size: 30px;
+	}
+	.f3 {
+		font-size: 29px;
+	}
+	.f4 {
+		font-size: 27px;
+	}
+	.stats {
+		padding-bottom: 2%;
+	}
+	.stats p {
+		padding-left: 2%;
+
 	}
 	.statsLine2 {
 		margin-top: 60px;
+	}
+	.statsLine2 img {
+		height: 200px;
+		margin-top: 3%;
+		margin-bottom: 1%;
 	}
 	.statsLine3 {
 		margin-top: 10px;
@@ -307,11 +330,43 @@ a.arrow-down {
 		/* padding-bottom: 15px; */
 	}
 	.powerUp img {
-		height: 40px;
+		height: 80px;
 	}
 	.stars img {
-		height: 20px;
+		height: 30px;
 	}
+	#projects {
+		font-size: 50px;
+		height: 100vh;
+		width: 100%;
+		padding-top: 100px;
+		/* background-color: rgba(150, 150, 150, .9); */
+		background-color: rgba(240, 240, 240,.9);
+		text-align: center;
+	}
+	#projects hr, #contact hr {
+		border: 1px solid green;
+	}
+	.outerWhiteBoard {
+	 padding-top: 50px;
+	}
+	.innerWhiteBoard {
+	
+	}
+
+	.connect {
+		background-color: rgba(240, 240, 240,.9);
+		height: 100vh;
+		/* font-size: 50px; */
+
+	}
+	#contact .header {
+		font-size: 50px;
+	}
+	#contact input, textarea {
+		font-size: 20px;
+	}
+
 } 
 
 /* Mobile Friendly Design */
@@ -436,8 +491,8 @@ a.arrow-down {
 		background-color: rgba(240, 240, 240,.9);
 		text-align: center;
 	}
-	#projects hr {
-		border: 3px solid green;
+	#projects hr, #contact hr {
+		border: 2px solid green;
 	}
 	.outerWhiteBoard {
 	 padding-top: 50px;
