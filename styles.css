@@ -63,6 +63,12 @@ a.arrow-down {
 .space {
 	margin-top: 20px;
 }
+.fillWidth {
+	width: 100%;
+}
+.noPadding {
+	padding: 0px;
+}
 
 /* ----------------------Pre-load screen modified--------------------- */
 #loader-wrapper {
@@ -266,6 +272,45 @@ a.arrow-down {
 	}
 	.arrow {
 		visibility: hidden;
+	}
+	#about {
+		background-color: rgba(240, 240, 240,.8);
+	}
+	.bio-border {
+		height: 100vh;
+		border: 3px solid black;
+  		border-radius: 8px;
+  		margin-top: 5%;
+  		background-image: url("images/green-circuit-board-vector-background.jpg");
+	}
+	.bio-inner {
+  		background-color: rgba(240, 240, 240,.9);
+  		border: 2px solid black;
+  		border-radius: 10px;
+  		margin: 1%;
+  		
+	}
+	.bio-inner1 {
+		height: 96%;
+	}
+	.f1 {
+		font-size: 22px;
+		margin-top: 20px;
+	}
+	.statsLine2 {
+		margin-top: 60px;
+	}
+	.statsLine3 {
+		margin-top: 10px;
+		margin-left: 0px;
+		padding-left: 0px;
+		/* padding-bottom: 15px; */
+	}
+	.powerUp img {
+		height: 40px;
+	}
+	.stars img {
+		height: 20px;
 	}
 } 
 
