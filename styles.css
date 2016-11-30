@@ -214,9 +214,6 @@ a.arrow-down {
 	/* MYNAME */
 }
 @media (max-device-width: 768px) and (min-device-width:500px) {
-	#video-background {
-		visibility: hidden;
-	}
 	#video-container {
 		height: 100vh;
 		position: relative;
@@ -360,7 +357,7 @@ a.arrow-down {
 	.connect {
 		background-color: rgba(240, 240, 240,.9);
 		height: 100vh;
-		/* font-size: 50px; */
+		font-size: 25px;
 
 	}
 	#contact .header {
@@ -507,8 +504,14 @@ a.arrow-down {
 	.connect {
 		background-color: rgba(240, 240, 240,.9);
 		height: 100vh;
-		font-size: 50px;
+		font-size: 40px;
 
+	}
+	#contact .header {
+		font-size: 50px;
+	}
+	#contact input, textarea {
+		font-size: 30px;
 	}
 
 }
