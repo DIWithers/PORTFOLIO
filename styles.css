@@ -214,6 +214,9 @@ a.arrow-down {
 	/* MYNAME */
 }
 @media (max-device-width: 768px) and (min-device-width:500px) {
+	#video-background {
+		visibility: hidden;
+	}
 	#video-container {
 		height: 100vh;
 		position: relative;
