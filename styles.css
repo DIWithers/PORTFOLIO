@@ -213,7 +213,7 @@ a.arrow-down {
 	
 	/* MYNAME */
 }
-@media (max-device-width: 768px) and (min-device-width:500px) {
+@media (max-device-width: 1300px) and (min-device-width:500px) {
 	#video-container {
 		height: 100vh;
 		position: relative;
@@ -388,6 +388,9 @@ a.arrow-down {
   		border-radius: 10px;
   		margin: 1%;
   		/* height: 80%; */
+	}
+	.bio-inner p {
+		padding-left: 20px;
 	}
 	.profilePic img {
 		height: 300px;
