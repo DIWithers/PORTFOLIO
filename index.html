@@ -22,7 +22,7 @@
 <body data-spy="scroll" data-target="#nav">
 	<!-- Nav Bar -->
 	<div id="navBar">
-		<nav class="navbar navbar-fixed-top" id="nav">
+		<nav class="navbar navbar-default navbar-fixed-top" id="nav" cz-shortcuit-listen="true">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -38,10 +38,10 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li><a ng-href="#about">About</a></li>
-		        <li><a ng-href="#skills">New Skills</a></li>
-		        <li><a ng-href="#projects">Projects</a></li>
-		        <li><a ng-href="#contact">Contact</a></li>
+		        <li><a href="#about">About</a></li>
+		        <li><a href="#skills">New Skills</a></li>
+		        <li><a href="#projects">Projects</a></li>
+		        <li><a href="#contact">Contact</a></li>
 		        <li><a href="#">Resume</a></li>
 
 		      </ul>
@@ -61,27 +61,30 @@
 	</div>
 	<!-- end Pre-loading Screen -->
 	<!-- Background Video -->
-    <video autoplay="" loop="" class="fillWidth" id= "video-background">
-        <source src="videos/nodes-loop-SD.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        <!-- <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
-    </video>
-    <!-- <div class="poster hidden"> -->
-        <!-- <img src="PATH_TO_JPEG" alt=""> -->
-    <!-- </div> -->
-    <div class="container-fluid" id="main">
-    	<div id="main-title">
-    		<img src="images/dwGreen.png" alt="dw logo">
-			<h1><strong>Danielle Ivy Withers</strong></h1>
-			<h3>Full Stack Software Engineer</h3>
-		</div>
-		<a href="#quote" class="arrow">
+	<div id="video-container">
+	    <video autoplay="" loop="" class="fillWidth" id= "video-background">
+	        <source src="videos/nodes-loop-SD.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+	        <!-- <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+	    </video>
+	    <div class="container-fluid" id="main">
+    		<div id="main-title">
+    			<img src="images/dwGreen.png" alt="dw logo">
+				<h1><strong>Danielle Ivy Withers</strong></h1>
+				<h3>Full Stack Software Engineer</h3>
+			</div>
+			<a href="#quote" class="arrow">
 			<div class="arrow-down"></div>
-		</a>
-	</div>
+			</a>
+		</div>
 
-		<div class="row" id="quote">
-			I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.
-			<h2>Nikola Tesla</h2>
+	</div>
+	    <!-- <div class="poster hidden"> -->
+	        <!-- <img src="PATH_TO_JPEG" alt=""> -->
+	    <!-- </div> -->
+
+		<div class="container-fluid" id="quote">
+			<h2>I do not think there is any thrill that can go through the human heart like that felt by the inventor as he sees some creation of the brain unfolding to success... such emotions make a man forget food, sleep, friends, love, everything.</h2>
+			<h3>Nikola Tesla</h3>
 		</div>
 
 	<div class="container-fluid about" id="about">
@@ -135,7 +138,7 @@
 							<div><img src="images/starsFour.png"></div>
 						</div>
 							<div class="col-xs-4">
-							<div>Empathy</div>
+							<div>UX/UI</div>
 							<div><img src="images/starsFour.png"></div>
 						</div>
 							<div class="col-xs-4">
@@ -164,12 +167,15 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid" id="projects">
+		<div class="row header">Projects<hr></div>
+	</div>
 	<!-- Contact -->
 	<div class="canvasWrapper connect">
 		<canvas id="canv">
 		</canvas>
-		<div class="bottom-wrapper f3">
-			<div class="col-md-12 f2" id="contact">
+		<div class="bottom-wrapper">
+			<div class="col-md-12" id="contact">
 				<p class="bold">Connect</p>
 				<form action="mail.php" class="forms" method="post" >
 			  	<p>Name</p>

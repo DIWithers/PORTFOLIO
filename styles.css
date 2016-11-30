@@ -9,6 +9,9 @@ body {
     /* height: 100vh; */
      
 }
+.navbar-nav li {
+	color: darkgreen;
+}
 .container-fluid {
 	width: 100%;
 	margin: 0px;
@@ -205,27 +208,68 @@ a.arrow-down {
 	/* MYNAME */
 }
 @media (max-device-width: 768px) and (min-device-width:500px) {
+	#video-container {
+		height: 100vh;
+		position: relative;
+		bottom: 0%;
+		left: 0%;
+		overflow: hidden;
+	}
+	#video-container video {
+		bottom: 0;
+	}
+	#video-background {
+		position: relative;
+  		right: 0; 
+  		bottom: 0;
+  		min-width: 100%; 
+  		min-height: 100%;
+  		width: auto; 
+  		height: auto;
+  		z-index: -100;
+	}
+
 	#main {
+		z-index: 100;
+    	width: 100%;
+    	top: 35%;
+    	position: absolute;
+    	text-align: center;
 
 	}
 	#main > img {
 		position: static;
 	}
 	#main-title {
+		top: 0px;
+		position: static;
+		color: black;
+	}
+	h1 {
 		
 	}
-	#quote {
-		height: 100%;
+	h2 {
+		font-size: 30px;
 	}
-	/* #video-background {
-		visibility: hidden;
-	} */
+
+	h3 {
+		font-size: 20px;
+	}
+	#quote {
+		height: 100vh;
+		font-size: 30px;
+		vertical-align: center;
+	}
+	#quote h2 {
+		margin-top: 20%;
+
+	}
 	.arrow {
 		visibility: hidden;
 	}
 } 
 
-
+/* Mobile Friendly Design */
 @media screen and (max-device-width: 500px) {
 	#video-background {
 		visibility: hidden;
@@ -270,6 +314,10 @@ a.arrow-down {
 		font-size: 60px ;
 		margin: 0px;
 		padding-top: 80px;
+	}
+	#quote h2{
+		font-size: 60px;
+		padding-top: 25%;
 	}
 	#about {
 		margin: 0px;
@@ -332,11 +380,19 @@ a.arrow-down {
 		padding: 15px;
 	}
 	#projects {
-
+		font-size: 50px;
+		height: 100vh;
+		width: 100%;
+		padding-top: 100px;
+		/* background-color: rgba(150, 150, 150, .9); */
+		background-color: rgba(240, 240, 240,.9);
+		text-align: center;
 	}
-
+	#projects hr {
+		border: 3px solid green;
+	}
 	.outerWhiteBoard {
-	 
+	 padding-top: 50px;
 	}
 	.innerWhiteBoard {
 	
@@ -345,6 +401,7 @@ a.arrow-down {
 	.connect {
 		background-color: rgba(240, 240, 240,.9);
 		height: 100vh;
+		font-size: 50px;
 
 	}
 
