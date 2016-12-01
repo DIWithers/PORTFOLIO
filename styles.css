@@ -15,6 +15,7 @@ body {
 .container-fluid {
 	width: 100%;
 	margin: 0px;
+	padding: 0px;
 }
 #main {
 	text-align: center;
@@ -60,14 +61,18 @@ a.arrow-down {
 .center {
 	text-align: center;
 }
-.space {
-	margin-top: 20px;
-}
+
 .fillWidth {
 	width: 100%;
 }
 .noPadding {
 	padding: 0px;
+}
+.i {
+	font-style: italic;
+}
+.left {
+	text-align: left;
 }
 
 /* ----------------------Pre-load screen modified--------------------- */
@@ -235,139 +240,6 @@ a.arrow-down {
   		z-index: -100;
 	}
 
-	#main {
-		z-index: 100;
-    	width: 100%;
-    	top: 35%;
-    	position: absolute;
-    	text-align: center;
-
-	}
-	#main > img {
-		position: static;
-	}
-	#main-title {
-		top: 0px;
-		position: static;
-		color: black;
-	}
-	h1 {
-		
-	}
-	h2 {
-		font-size: 45px;
-	}
-
-	h3 {
-		font-size: 30px;
-	}
-	#quote {
-		height: 100vh;
-		vertical-align: center;
-	}
-	#quote h2 {
-		margin-top: 20%;
-
-	}
-	.arrow {
-		visibility: hidden;
-	}
-	#about {
-		background-color: rgba(240, 240, 240,.8);
-	}
-	.bio-border {
-		height: 100vh;
-		border: 3px solid black;
-  		border-radius: 8px;
-  		margin-top: 5%;
-  		background-image: url("images/green-circuit-board-vector-background.jpg");
-	}
-	.bio-inner {
-  		background-color: rgba(240, 240, 240,.9);
-  		border: 2px solid black;
-  		border-radius: 10px;
-  		margin: 1%;
-  		height: 100%;
-  		
-	}
-	.bio-inner1 {
-		height: 96%;
-	}
-	.bio-inner2 {
-		padding-top: 1%;
-	}
-	.f1 {
-		font-size: 40px;
-		margin-top: 20px;
-	}
-	.f2 {
-		font-size: 30px;
-	}
-	.f3 {
-		font-size: 29px;
-	}
-	.f4 {
-		font-size: 27px;
-	}
-	.stats {
-		padding-bottom: 2%;
-	}
-	.stats p {
-		padding-left: 2%;
-
-	}
-	.statsLine2 {
-		margin-top: 60px;
-	}
-	.statsLine2 img {
-		height: 200px;
-		margin-top: 3%;
-		margin-bottom: 1%;
-	}
-	.statsLine3 {
-		margin-top: 10px;
-		margin-left: 0px;
-		padding-left: 0px;
-		/* padding-bottom: 15px; */
-	}
-	.powerUp img {
-		height: 80px;
-	}
-	.stars img {
-		height: 30px;
-	}
-	#projects {
-		font-size: 50px;
-		height: 100vh;
-		width: 100%;
-		padding-top: 100px;
-		/* background-color: rgba(150, 150, 150, .9); */
-		background-color: rgba(240, 240, 240,.9);
-		text-align: center;
-	}
-	#projects hr, #contact hr {
-		border: 1px solid green;
-	}
-	.outerWhiteBoard {
-	 padding-top: 50px;
-	}
-	.innerWhiteBoard {
-	
-	}
-
-	.connect {
-		background-color: rgba(240, 240, 240,.9);
-		height: 100vh;
-		font-size: 25px;
-
-	}
-	#contact .header {
-		font-size: 50px;
-	}
-	#contact input, textarea {
-		font-size: 20px;
-	}
-
 } 
 
 /* Mobile Friendly Design */
@@ -376,8 +248,10 @@ a.arrow-down {
 		visibility: hidden;
 	}
 	#main {
-		background-color: #C0C0C0;
+		/* background-color: #C0C0C0; */
+		background-color: rgba(192, 192, 192, .9);
 		color: black;
+		height: 100vh;
 	}
 	#main > img {
 		/* margin-top: 100px;
@@ -389,140 +263,72 @@ a.arrow-down {
 		color: black;
 	}
 	h1 {
-		font-size: 55px;
+		font-size: 70px;
 	}
-
-
-	h3 {
-		font-size: 30px;
-	}
-
-	.arrow-down {
-		background-image: url("images/down-arrow.png");
-		width: 30px;
-		height: 30px;
-		display: block;
-		position: absolute;
-	}
-	
-	#quote {
-		position: relative;
-		background-color: rgba(100, 150, 100, .9);
-		font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
-		text-align: center;
-		height: 100vh;
-		width: 100%;
-		font-size: 60px ;
-		margin: 0px;
-		padding-top: 80px;
-	}
-	#quote h2{
+	h2 {
 		font-size: 60px;
-		padding-top: 25%;
 	}
-	#about {
-		margin: 0px;
-		height: 100vh;
-		width: 100%;
-		/* background-color: rgba(150, 150, 150, .9); */
-		background-color: rgba(240, 240, 240,.9);
-	}
-
-	.bio-border {
-		height: 100vh;
-  		border: 3px solid black;
-  		border-radius: 8px;
-  		margin-top: 5%;
-  		background-image: url("images/green-circuit-board-vector-background.jpg");
-	}
-	.bio-border2 {
-		margin-top: 0px;
-	}
-	.bio-inner1 {
-		height: 100%;
-	}
-
-	.bio-inner {
-  		background-color: rgba(240, 240, 240,.9);
-  		border: 2px solid black;
-  		border-radius: 10px;
-  		margin: 1%;
-  		/* height: 80%; */
-	}
-	.bio-inner p {
-		padding-left: 20px;
-	}
-	.profilePic img {
-		height: 300px;
-		border: 5px solid black;
-		border-radius: 5px;
-	}
-	.statsLine2 {
-		margin-top: 80px;
-	}
-	.statsLine3 {
-		margin-top: 20px;
-		margin-left: 20px;
-		padding-bottom: 15px;
-		text-align: center;
+	h3 {
+		font-size: 40px;
 	}
 	.f1 {
-		font-size: 60px;
-		text-align: center;
+		font-size: 50px;
 	}
 	.f2 {
-		font-size: 55px;
+		font-size: 40px;
 	}
 	.f3 {
-		font-size: 50px;
-	}
-	.f4 {
-		font-size: 40px;
-	}
-	.f5 {
 		font-size: 30px;
+	}
+	#quote {
+		height: 100vh;
+		padding-top: 25%;
+	}
+	#statCard {
+		background-color: rgba(240, 240, 240,.9);
+	}
+	.outer-border1, .outer-border2 {
+		height: 95vh;
+  		border: 3px solid black;
+  		border-radius: 10px;
+  		background-image: url("images/green-circuit-board-vector-background.jpg");
+  		margin: 5%;
+	}
+
+	.inner-border1 {
+		background-color: rgba(240, 240, 240, .9);
+		margin: 2%;
+		text-align: center;
+		height: 95%;
+	}
+	.inner-border2 {
+		background-color: rgba(240, 240, 240, .9);
+		text-align: center;
+		margin: 2%;
+		height: 30%;
+	}
+	.inner-border3 {
+		background-color: rgba(240, 240, 240, .9);
+		margin: 2%;
+		height: 65%;
+	}
+	.statPic img{
+		height: 25vh;
 	}
 	.powerUp img {
-		height: 80px;
+		height: 10vh;
+	}
+	.powerUp, .loves {
+		text-align: left;
 	}
 	.stars img {
-		height: 30px;
+		height: 40px;
 	}
-	.stats {
-		padding: 15px;
+	.section6 {
+		font-size: 35px;
+		padding: 3%;
 	}
-	#projects {
-		font-size: 50px;
-		height: 100vh;
-		width: 100%;
-		padding-top: 100px;
-		/* background-color: rgba(150, 150, 150, .9); */
-		background-color: rgba(240, 240, 240,.9);
-		text-align: center;
+	.footnote {
+		font-size: 25px;
 	}
-	#projects hr, #contact hr {
-		border: 2px solid green;
-	}
-	.outerWhiteBoard {
-	 padding-top: 50px;
-	}
-	.innerWhiteBoard {
-	
-	}
-
-	.connect {
-		background-color: rgba(240, 240, 240,.9);
-		height: 100vh;
-		font-size: 40px;
-
-	}
-	#contact .header {
-		font-size: 50px;
-	}
-	#contact input, textarea {
-		font-size: 30px;
-	}
-
 }
-
-
