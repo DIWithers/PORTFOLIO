@@ -34,7 +34,7 @@ body {
 	background-color: rgba(100, 150, 100, .9);
 	font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
 	text-align: center;
-	padding: 5% 10%;
+	/* padding: 5% 10%; */
 
 }
 #video-background{
@@ -239,6 +239,17 @@ a.arrow-down {
   		height: auto;
   		z-index: -100;
 	}
+	#main {
+		position: absolute;
+		top: 0px;	
+	}
+	#main-title {
+		top: 30%;
+	}
+	#quote {
+		height: 100vh;
+		padding: 15% 5%;
+	}
 
 } 
 
@@ -336,5 +347,39 @@ a.arrow-down {
 	}
 	.footnote {
 		font-size: 25px;
+	}
+	#skills {
+		height: 100vh;
+	}
+	.skillsImg{
+		height: 70%;
+		background-color: white;
+	}
+	.skillsImg img {
+		height: 50%;
+		margin-top: 15%;
+	}
+	.skillsIntro {
+		background-color: rgba(100, 150, 100, .9);
+		height: 30%;
+		font-size: 65px;
+		text-align: center;
+		padding: 10% 2%;
+	}
+	.tip {
+		font-size: 25px;
+		padding-top: 5%;
+	}
+	.dclink {
+		font-size: 40px;
+	}
+	#projects {
+		background-color: rgba(240, 240, 240, .9);
+	}
+	#projects hr, #contact hr {
+		border: 2px solid green;
+	}
+	#contact {
+		background-color: rgba(240, 240, 240, .9);
 	}
 }
