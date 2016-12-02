@@ -4,10 +4,34 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     position: relative;
+    font-size: 16px;
 }
-.navbar-lav li {
-	color: darkgreen;
+.center {
+	text-align: center;
 }
+.bold {
+	font-weight: 900;
+}
+.i {
+	font-style: italic;
+}
+.left {
+	text-align: left;
+}
+/* ------------NAV BAR------------ */
+ #nav {
+    background-color: rgba(240, 240, 240, .7);
+    color: #84c341;
+}
+#nav li a{
+  /* color: rgb(20, 17, 114); */
+  color: #84c345;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+/* End Nav */
 .container-fluid {
 	/* margin: auto; */
 	/* padding: 0px; */
@@ -32,6 +56,37 @@ body {
 #main {
 	height: 100vh;
 	text-align: center;
+}
+
+.f1 {
+	font-size: 70px;
+}
+.f2 {
+	font-size: 65px;
+}
+.f3 {
+	font-size: 60px;
+}
+.f4 {
+	font-size: 55px;
+}
+.f5 {
+	font-size: 50px;
+}
+.f6 {
+	font-size: 45px;
+}
+.f7 {
+	font-size: 40px;
+}
+.f8 {
+	font-size: 35px;
+}
+.f9 {
+	font-size: 30px;
+}
+.f10 {
+	font-size: 25px;
 }
 @media screen and (min-device-width: 768px) {
 	#video-container {
@@ -69,6 +124,8 @@ body {
 	}
 
 
+
+
 }
 @media screen and (max-device-width: 500px) {
 	#video-background {
@@ -89,21 +146,83 @@ body {
 		position: static;
 		color: black;
 	}
+	#quote {
+		background-color: rgba(100, 150, 100, .9);
+		font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
+		text-align: center;
+	}
+	#quote, .firstCard, .secondCard {
+	height: 100vh;
+	
+	/* Center the content... */
+	display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
 
-}
-/* ------------NAV BAR------------ */
- #nav {
-    background-color: rgba(240, 240, 240, .7);
-    color: #84c341;
-}
-#nav li a{
-  /* color: rgb(20, 17, 114); */
-  color: #84c345;
-}
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
 
-.navbar-brand img {
-  height: 30px;
-}
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+
+	}
+
+	#quote hr {
+		border: 2px solid black;
+	}
+	#about {
+		background-color: rgba(240, 240, 240,.9);
+		padding-top: 2%;
+		overflow: hidden;
+	}
+	.titleAbout hr{
+		border: 2px solid black;
+		
+	}
+	.outer-border1, .outer-border2 {
+		height: 100vh;
+		border: 3px solid black;
+	  	border-radius: 10px;
+		background-image: url("images/green-circuit-board-vector-background.jpg");
+	}
+	.inner-border1, .inner-border2, .inner-border3 {
+		background-color: rgba(240, 240, 240, .9);
+		margin: 2%;
+	}
+	.bioPic img {
+		height: 300px;
+		border: 3px solid black;
+	}
+	.section4 img {
+		height: 150px;
+	}
+	.inner-border1 {
+		height: 95vh;
+	}
+	.inner-border2 {
+		height: 35vh;
+	}
+	.inner-border3 {
+		height: 60vh;
+	}
+	#skills {
+		background-color: rgba(240, 240, 240, .9);
+		height: 100vh;
+	}
+	#projects {
+
+	}
+	#contact {
+
+	}
+
+} /* mobile media query end */
+
+
 
 /* ----------------------Pre-load screen modified--------------------- */
 #loader-wrapper {
