@@ -2,25 +2,43 @@ body {
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
     background-image: url("images/nodescompact.png");
     background-size: 100%;
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
     position: relative;
+    font-size: 18px;
+    /* height: 100vh; */
+     
 }
-.navbar-lav li {
+.navbar-nav li {
 	color: darkgreen;
 }
 .container-fluid {
-	/* margin: auto; */
-	/* padding: 0px; */
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
-#video-container {
+#main {
+	text-align: center;
 	height: 100vh;
-	position: relative;
-	bottom: 0%;
-	left: 0%;
-	overflow: hidden;
+
+}
+#main-title {
+	position: absolute;
+	top: 50%;
+	left: 34%;
+	text-align: center;
+	color: black;
+	/* height: 100vh; */
+}
+#quote {
+	background-color: rgba(100, 150, 100, .9);
+	font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
+	text-align: center;
+	/* padding: 5% 10%; */
+
 }
 #video-background{
-	  position: absolute;
+	  position: fixed;
 	  right: 0; 
 	  bottom: 0;
 	  min-width: 100%; 
@@ -29,80 +47,32 @@ body {
 	  height: auto;
 	  z-index: -100;
 	}
-#main {
-	height: 100vh;
+a.arrow-down {
+	background-image: url("images/down-arrow.png");
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+
+}
+.bold {
+	font-weight: 900;
+}
+.center {
 	text-align: center;
 }
-@media screen and (min-device-width: 768px) {
-	#video-container {
 
-	}
-	#video-container video {
-		bottom: 0;
-	}
-	#video-background {
-
-	}
-	#main {
-	}
-	#main-title {
-		margin-top: 15%;
-	}
+.fillWidth {
+	width: 100%;
 }
-/* Video does not show well on tablets and other mobile devices... */
-@media screen and (max-device-width: 768px) and (min-device-width:500px) {
-	#video-background {
-		visibility: hidden;
-	}
-	#main {
-		background-image: url("images/keyboardGlow768.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	#main-title {
-		margin-top: 15%;
-		color: white;
-		text-shadow: 2px 2px black;
-	}
-	#main-title h1 {
-		font-size: 60px;
-	}
-
-
+.noPadding {
+	padding: 0px;
 }
-@media screen and (max-device-width: 500px) {
-	#video-background {
-		visibility: hidden;
-	}
-	#main {
-		/* background-color: #C0C0C0; */
-		background-color: rgba(192, 192, 192, .9);
-		color: black;
-		height: 100vh;
-	}
-	#main > img {
-		/* margin-top: 100px;
-		position: static; */
-	}
-	#main-title {
-		margin-top: 50%;
-		position: static;
-		color: black;
-	}
-
+.i {
+	font-style: italic;
 }
-/* ------------NAV BAR------------ */
- #nav {
-    background-color: rgba(240, 240, 240, .7);
-    color: #84c341;
-}
-#nav li a{
-  /* color: rgb(20, 17, 114); */
-  color: #84c345;
-}
-
-.navbar-brand img {
-  height: 30px;
+.left {
+	text-align: left;
 }
 
 /* ----------------------Pre-load screen modified--------------------- */
@@ -227,3 +197,189 @@ body {
                 transition: all 0.3s 1s ease-out;
     }
     /* ----------------------Pre-load screen modified END--------------------- */
+ /* ------------NAV BAR------------ */
+ #nav {
+    background-color: rgba(240, 240, 240, .7);
+    color: #84c341;
+}
+#nav li a{
+  /* color: rgb(20, 17, 114); */
+  color: #84c345;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+/* -------------------------Background Video------------------------------ */
+/* -------------------------Background Video END------------------------------ */
+@media screen and (min-width: 768px) {
+
+	
+	/* MYNAME */
+}
+@media (max-device-width: 768px) and (min-device-width:500px) {
+	#video-container {
+		height: 100vh;
+		position: relative;
+		bottom: 0%;
+		left: 0%;
+		overflow: hidden;
+	}
+	#video-container video {
+		bottom: 0;
+	}
+	#video-background {
+		position: relative;
+  		right: 0; 
+  		bottom: 0;
+  		min-width: 100%; 
+  		min-height: 100%;
+  		width: auto; 
+  		height: auto;
+  		z-index: -100;
+	}
+	#main {
+		position: absolute;
+		top: 0px;	
+	}
+	#main-title {
+		top: 30%;
+	}
+	#quote {
+		height: 100vh;
+		padding: 15% 5%;
+	}
+
+} 
+
+/* Mobile Friendly Design */
+@media screen and (max-device-width: 500px) {
+	#video-background {
+		visibility: hidden;
+	}
+	#main {
+		/* background-color: #C0C0C0; */
+		background-color: rgba(192, 192, 192, .9);
+		color: black;
+		height: 100vh;
+	}
+	#main > img {
+		/* margin-top: 100px;
+		position: static; */
+	}
+	#main-title {
+		margin-top: 50%;
+		position: static;
+		color: black;
+	}
+	h1 {
+		font-size: 70px;
+	}
+	h2 {
+		font-size: 68px;
+	}
+	h3 {
+		font-size: 45px;
+	}
+	.f1 {
+		font-size: 50px;
+	}
+	.f2 {
+		font-size: 40px;
+	}
+	.f3 {
+		font-size: 30px;
+	}
+	#quote {
+		height: 100vh;
+		padding-top: 25%;
+	}
+	#statCard {
+		background-color: rgba(240, 240, 240,.9);
+	}
+	.outer-border1, .outer-border2 {
+		height: 95vh;
+  		border: 3px solid black;
+  		border-radius: 10px;
+  		background-image: url("images/green-circuit-board-vector-background.jpg");
+  		margin: 5%;
+	}
+
+	.inner-border1 {
+		background-color: rgba(240, 240, 240, .9);
+		margin: 2%;
+		text-align: center;
+		height: 95%;
+	}
+	.inner-border2 {
+		background-color: rgba(240, 240, 240, .9);
+		text-align: center;
+		margin: 2%;
+		height: 30%;
+	}
+	.inner-border3 {
+		background-color: rgba(240, 240, 240, .9);
+		margin: 2%;
+		height: 65%;
+	}
+	.statPic img{
+		height: 25vh;
+	}
+	.powerUp {
+		font-size: 49px;
+	}
+	.powerUp img {
+		height: 10vh;
+	}
+	.powerUp, .loves {
+		text-align: left;
+	}
+	.stars img {
+		height: 40px;
+	}
+	.section2 {
+		font-size: 43px;
+		margin-top: 30px;
+	}
+	.section6 {
+		padding: 3%;
+	}
+	.footnote {
+		font-size: 25px;
+	}
+	#skills {
+		height: 100vh;
+	}
+	.skillsImg{
+		height: 70%;
+		background-color: white;
+	}
+	.skillsImg img {
+		height: 50%;
+		margin-top: 15%;
+	}
+	.skillsIntro {
+		background-color: rgba(100, 150, 100, .9);
+		height: 30%;
+		font-size: 65px;
+		text-align: center;
+		padding: 10% 2%;
+	}
+	.tip {
+		font-size: 25px;
+		padding-top: 5%;
+	}
+	.dclink {
+		font-size: 40px;
+	}
+	#projects {
+		background-color: rgba(240, 240, 240, .9);
+	}
+	#projects hr, #contact hr {
+		border: 2px solid green;
+	}
+	#contact {
+		background-color: rgba(240, 240, 240, .9);
+	}
+}
