@@ -131,6 +131,12 @@ body {
 	#video-background {
 		visibility: hidden;
 	}
+	h1 {
+		font-size: 90px;
+	}
+	h3 {
+		font-size: 50px;
+	}
 	#main {
 		/* background-color: #C0C0C0; */
 		background-color: rgba(192, 192, 192, .9);
@@ -146,12 +152,15 @@ body {
 		position: static;
 		color: black;
 	}
+	#main-title img {
+		height: 20vh;
+	}
 	#quote {
 		background-color: rgba(100, 150, 100, .9);
 		font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
 		text-align: center;
 	}
-	#quote, .firstCard, .secondCard {
+	#quote {
 	height: 100vh;
 	
 	/* Center the content... */
@@ -172,7 +181,13 @@ body {
 	}
 
 	#quote hr {
-		border: 2px solid black;
+		border: 2px solid #001B05;
+	}
+	.partialHR {
+		width: 90%;
+		margin: auto;
+		border: 1px solid #001B05;
+		margin-bottom: 2%;
 	}
 	#about {
 		background-color: rgba(240, 240, 240,.9);
@@ -180,17 +195,20 @@ body {
 		overflow: hidden;
 	}
 	.titleAbout hr{
-		border: 2px solid black;
+		border: 2px solid #001B05;
 		
 	}
+	.stars img {
+		height: 50px;
+	}
 	.outer-border1, .outer-border2 {
-		height: 100vh;
-		border: 3px solid black;
-	  	border-radius: 10px;
-		background-image: url("images/green-circuit-board-vector-background.jpg");
+		/* height: 100vh; */
+		/* border: 3px solid black; */
+	  	/* border-radius: 10px; */
+		/* background-image: url("images/green-circuit-board-vector-background.jpg"); */
 	}
 	.inner-border1, .inner-border2, .inner-border3 {
-		background-color: rgba(240, 240, 240, .9);
+		/* background-color: rgba(240, 240, 240, .9); */
 		margin: 2%;
 	}
 	.bioPic img {
@@ -200,18 +218,25 @@ body {
 	.section4 img {
 		height: 150px;
 	}
-	.inner-border1 {
-		height: 95vh;
+	.section6 {
+		margin: 3%;
 	}
-	.inner-border2 {
-		height: 35vh;
-	}
-	.inner-border3 {
-		height: 60vh;
-	}
+
 	#skills {
-		background-color: rgba(240, 240, 240, .9);
 		height: 100vh;
+		background-color: rgba(100, 150, 100, .9);
+	}
+	.skillsIntro {
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	.skillsPic {
+		padding-top: 2%;
+		background-color: #FFF;
+		height: 50%;
+	}
+	.skillsPic img {
+		height: 35vh;
 	}
 	#projects {
 
