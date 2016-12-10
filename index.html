@@ -6,17 +6,11 @@
 	<title>Danielle Ivy Withers</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- jQuery only incl for video -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="module.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="icon" href="images/dw.ico">
-	<script src="angular-route.js"></script>
 
-	<script type="text/javascript" src="mainController.js"></script>
-	<script src="scripts.js"></script>
 </head>
 <body data-spy="scroll" data-target="#nav">
 	<!-- Nav Bar -->
@@ -78,12 +72,12 @@
 	<!-- ABOUT SECTION -->
 	<div class="container-fluid" id="about">
 		<div class="f3 titleAbout center">About<hr></div>
-		<div class="firstCard">
+		<div class="firstCard col-md-6">
 			<div class="row outer-border1">
 				<div class="row inner-border1 f3 center">
-					<div class="col-xs-12 col-sm-12 section1">
-						<div class="col-xs-12 col-sm-12 bold">Class: Software Engineer</div>
-						<div class="col-xs-12 col-sm-12 bold">Lvl 33<hr></div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section1">
+						<div class="col-xs-12 col-sm-12 col-md-9 col-ld-9 bold">Class: Software Engineer</div>
+						<div class="col-xs-12 col-sm-12 col-md-3 col-ld-3 bold">Lvl 33<hr></div>
 					</div>
 					<div class="col-xs-12 col-sm-12 section2">
 						<div class="col-xs-6 col-sm-6">
@@ -91,7 +85,8 @@
 						</div>
 						<div class="col-xs-6 col-sm-6 f6">
 							<div class="col-xs-12 col-sm-12">Web Developer<hr></div>
-							<div class="col-xs-12 col-sm-12">App Developer<hr></div>							<div class="col-xs-12 col-sm-12">Game Developer<hr></div>
+							<div class="col-xs-12 col-sm-12">App Developer<hr></div>
+							<div class="col-xs-12 col-sm-12">Game Developer<hr></div>
 						</div>
 					</div>
 					<div class="section3">
@@ -104,12 +99,12 @@
 					</div>
 					<div class="section4 left">
 						<div class="col-xs-12 col-sm-12 f4 bold powerUp">PowerUp Combo: <img src="images/glossyCup.png">+<img src="images/computerTransparent.png"><hr></div>
-						<div class="col-xs-12 col-sm-12 f4"><span class="bold"> Loves:</span> Hackathons && IoT</div>
+						<div class="col-xs-12 col-sm-12 f4 loves"><span class="bold"> Loves:</span> Hackathons && IoT</div>
 					</div>	
 				</div>
 			</div>
 		</div>
-		<div class="secondCard">
+		<div class="secondCard col-md-6">
 			<div class="row outer-border2">
 				<div class="row inner-border2">
 					<div class="col-xs-12 col-sm-12 section5 center">
@@ -166,7 +161,7 @@
 		</div>
 	</div>
 	<!-- END ABOUT SECTION -->
-	
+	<!-- SKILLS -->
 	<div class="container-fluid" id="skills">
 		<div class="row skillsIntro f1 center">
 			<div class="">New Skills Learned @ DigitalCrafts</div>
@@ -177,15 +172,95 @@
 			<img src="images/computer-skills-complete.png">
 		</div>
 	</div>
+	<!-- END SKILLS -->
+	<!-- PROJECTS SECTION -->
 	<div class="container-fluid" id="projects">
 		<div class="f3 center">Projects<hr></div>
+		<div class="row center">
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h2>BUZZ</h2>
+						<p>Buzz (like tweet) in an effort to save the bees!</p>
+						<p>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="Demo">Demo</a>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
+						</p>
+					</div>
+					<img src="">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h2>E-commerce</h2>
+						<p>Take the hassle out of shopping for teas/coffee.</p>
+						<p>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="Demo">Demo</a>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
+						</p>
+					</div>
+					<img src="images/landing_eCommerce.png">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h2>Revelry</h2>
+						<p>Search for festival and date information using the Ticketmaster API.</p>
+						<p>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="Demo">Demo</a>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
+						</p>
+					<img src="">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h2>ChatterDraw</h2>
+						<p>Draw or chat? I hope you do both!</p>
+						<p>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="Demo">Demo</a>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
+						</p>
+					</div>
+					<img src="">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h2>TBD Java app</h2>
+						<p></p>
+						<p>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="Demo">Demo</a>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
+						</p>
+					</div>
+					<img src="">
+				</div>
+			</div>
+		</div>
 	</div>
+	<!-- END PROJECTS SECTION -->
 	<div class="container-fluid" id="contact">
+	<div id="canvas"></div>
 		<div class="f3 center">Contact<hr></div>
+		<div class="row">
+			
+		</div>
 	</div>
-
+<!-- jQuery incl for video -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="module.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="angular-route.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="mainController.js"></script>
+	<script src="scripts.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

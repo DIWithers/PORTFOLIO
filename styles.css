@@ -18,6 +18,7 @@ body {
 .left {
 	text-align: left;
 }
+
 /* ------------NAV BAR------------ */
  #nav {
     background-color: rgba(240, 240, 240, .7);
@@ -57,38 +58,32 @@ body {
 	height: 100vh;
 	text-align: center;
 }
+#quote {
+	background-color: rgba(100, 150, 100, .9);
+	font-family: 'Yatra One', "Lucida Grande", Helvetica, Arial, sans-serif;
+	text-align: center;
+	}
 
-.f1 {
-	font-size: 70px;
-}
-.f2 {
-	font-size: 65px;
-}
-.f3 {
-	font-size: 60px;
-}
-.f4 {
-	font-size: 55px;
-}
-.f5 {
+@media screen and (min-device-width: 768px) {
+		.f1 {
 	font-size: 50px;
 }
-.f6 {
+.f2 {
 	font-size: 45px;
 }
-.f7 {
+.f3 {
 	font-size: 40px;
 }
-.f8 {
-	font-size: 35px;
-}
-.f9 {
+.f4 {
 	font-size: 30px;
 }
-.f10 {
-	font-size: 25px;
+
+.f6 {
+	font-size: 20px;
 }
-@media screen and (min-device-width: 768px) {
+.f8 {
+	font-size: 20px;
+}
 	#video-container {
 
 	}
@@ -103,6 +98,106 @@ body {
 	#main-title {
 		margin-top: 15%;
 	}
+	#quote {
+		background-color: rgba(100, 150, 100, .9);
+	}
+	#about {
+		background-color: rgba(240, 240, 240, .9);
+		padding-bottom: 4%;
+	}
+	#skills {
+		/* padding-top: 2%; */
+	}
+	.outer-border1, .outer-border2 {
+		height: 105vh;
+		border: 3px solid black;
+	  	border-radius: 10px;
+		background-image: url("images/green-circuit-board-vector-background.jpg");
+	}
+	.inner-border1, .inner-border2, .inner-border3 {
+		background-color: rgba(240, 240, 240, .9);
+		margin: 2%;
+	}
+	.section1 {
+		font-size: 30px;
+		padding: 0;
+		margin: 0;
+	}
+	.section2 img {
+		height: 200px;
+	}
+	.inner-border2 {
+		height: 35%;
+	}
+	.inner-border3 {
+		height: 58%;
+	}
+	.powerUp img{
+		height: 100px;
+		padding: 0;
+		margin: 0;
+	}
+	.loves {
+		margin-bottom: 5px;
+	}
+	.stars img {
+		height: 30px;
+	}
+	.partialHR {
+		display: none;
+	}
+	#skills {
+		height: 100vh;
+		background-color: rgba(100, 150, 100, .9);
+	}
+	.skillsIntro {
+		margin-bottom: 5%;
+		margin-top: 5%;
+		font-size: 40px;
+	}
+	.skillsPic {
+		padding-top: 2%;
+		background-color: #FFF;
+		height: 50%;
+	}
+	.skillsPic img {
+		height: 45vh;
+	}
+	#projects {
+		background-color: rgba(240, 240, 240, .9)
+	}
+	#projects img {
+		width: 100%;
+	}
+	#projects h2 {
+		font-size: 40px;
+		/* color: green; */
+	}
+	#projects p {
+		font-size: 20px;
+	}
+	.thumbnail {
+		display:inline-block;
+  		vertical-align:top;
+  		/* margin:25px; */
+  		width: 100%;
+  		position:relative;
+  		overflow:hidden;
+	}
+	.caption {
+		position: absolute;
+    	top: 0;
+    	margin: 0;
+    	height: 100%;
+    	width: 100%;
+    	text-align: center;
+    	/*opacity: 0;*/
+    	display: none; /* comment this out for CSS hover */
+    	background-color: rgba(240, 240, 240, .7);
+    	color: white;
+    	/*transition: all 0.5s ease;*/
+	}
+
 }
 /* Video does not show well on tablets and other mobile devices... */
 @media screen and (max-device-width: 768px) and (min-device-width:500px) {
@@ -122,6 +217,146 @@ body {
 	#main-title h1 {
 		font-size: 60px;
 	}
+	#main-title img {
+		height: 20vh;
+	}
+	#quote {
+	height: 100vh;
+	
+	/* Center the content... */
+	display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+
+	}
+
+	#quote hr {
+		border: 2px solid #001B05;
+	}
+	.partialHR {
+		width: 90%;
+		margin: auto;
+		border: 1px solid #001B05;
+		margin-bottom: 2%;
+	}
+	#about {
+		background-color: rgba(240, 240, 240,.9);
+		padding-top: 2%;
+		overflow: hidden;
+	}
+	.titleAbout hr{
+		border: 2px solid #001B05;
+		
+	}
+	.stars img {
+		height: 50px;
+	}
+	
+	
+	.bioPic img {
+		height: 300px;
+		border: 3px solid black;
+	}
+	.section4 img {
+		height: 150px;
+	}
+	.section6 {
+		margin: 3%;
+	}
+
+	#skills {
+		height: 100vh;
+		background-color: rgba(100, 150, 100, .9);
+	}
+	.skillsIntro {
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	.skillsPic {
+		padding-top: 2%;
+		background-color: #FFF;
+		height: 50%;
+	}
+	.skillsPic img {
+		height: 45vh;
+	}
+	#projects {
+		background-color: rgba(240, 240, 240, .9)
+	}
+	#projects img {
+		height: 400px;
+		max-width: 100%;
+	}
+	#projects h2 {
+		font-size: 40px;
+		/* color: green; */
+	}
+	#projects p {
+		font-size: 20px;
+	}
+	.thumbnail {
+		display:inline-block;
+  		vertical-align:top;
+  		/* margin:25px; */
+  		width: 100%;
+  		position:relative;
+  		overflow:hidden;
+	}
+	.caption {
+		position: absolute;
+    	top: 0;
+    	margin: 0;
+    	height: 100%;
+    	width: 100%;
+    	text-align: center;
+    	/*opacity: 0;*/
+    	display: none; /* comment this out for CSS hover */
+    	background-color: rgba(240, 240, 240, .7);
+    	color: white;
+    	/*transition: all 0.5s ease;*/
+	}
+ 
+
+	.f1 {
+	font-size: 50px;
+}
+.f2 {
+	font-size: 45px;
+}
+.f3 {
+	font-size: 40px;
+}
+.f4 {
+	font-size: 35px;
+}
+.f5 {
+	font-size: 30px;
+}
+.f6 {
+	font-size: 25px;
+}
+.f7 {
+	font-size: 20px;
+}
+.f8 {
+	font-size: 15px;
+}
+.f9 {
+	font-size: 10px;
+}
+.f10 {
+	font-size: 5px;
+}
 
 
 
@@ -239,11 +474,72 @@ body {
 		height: 35vh;
 	}
 	#projects {
-
+		background-color: rgba(240, 240, 240, .9)
+	}
+	#projects img {
+		width: 100%;
+	}
+	#projects h2 {
+		font-size: 40px;
+		/* color: green; */
+	}
+	#projects p {
+		font-size: 20px;
+	}
+	.thumbnail {
+		display:inline-block;
+  		vertical-align:top;
+  		/* margin:25px; */
+  		width: 100%;
+  		position:relative;
+  		overflow:hidden;
+	}
+	.caption {
+		position: absolute;
+    	top: 0;
+    	margin: 0;
+    	height: 100%;
+    	width: 100%;
+    	text-align: center;
+    	/*opacity: 0;*/
+    	display: none; /* comment this out for CSS hover */
+    	background-color: rgba(240, 240, 240, .8);
+    	color: white;
+    	/*transition: all 0.5s ease;*/
 	}
 	#contact {
 
 	}
+		.f1 {
+	font-size: 70px;
+}
+.f2 {
+	font-size: 65px;
+}
+.f3 {
+	font-size: 60px;
+}
+.f4 {
+	font-size: 55px;
+}
+.f5 {
+	font-size: 50px;
+}
+.f6 {
+	font-size: 45px;
+}
+.f7 {
+	font-size: 40px;
+}
+.f8 {
+	font-size: 35px;
+}
+.f9 {
+	font-size: 30px;
+}
+.f10 {
+	font-size: 25px;
+}
 
 } /* mobile media query end */
 

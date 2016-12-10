@@ -2,7 +2,7 @@
 // Background Video 
 //jQuery is required to run this code
 $( document ).ready(function() {
-
+    $('[data-toggle="tooltip"]').tooltip();
     //make sure screen is fully loaded before pre-load screen disappears
     setTimeout(function(){
         $('body').addClass('loaded');
@@ -35,6 +35,54 @@ $(window).bind('scroll', function() {
     }
 })
 ////----end Nav Controls
+///Project sliding tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); //If you're reading this and it doesn't work, SCRIPTS MUST BE AT THE BOTTOM OF INDEX.HTML!!!!!! 
+///end Projects
+
+///Fix ugly response message
+// $(function () {
+
+//     $('#contact-form').validator();
+
+//     $('#contact-form').on('submit', function (e) {
+//         if (!e.isDefaultPrevented()) {
+
+//             var url = "mail.php";
+
+//             $.ajax({
+//                 type: "POST",
+//                 url: url,
+//                 data: $(this).serialize(),
+//                 success: function (data)
+//                 {
+//                     var messageAlert = 'alert-' + data.type;
+//                     var messageText = data.message;
+
+//                     var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+//                     if (messageAlert && messageText) {
+//                         $('#contact-form').find('.messages').html(alertBox);
+//                         $('#contact-form')[0].reset();
+//                     }
+//                 }
+//             });
+
+//             $('#myModal').modal('show');
+//             $('#contact-form')[0].reset();
+//             return false;
+//         }
+//     })
+// });
+///
 
 ////--------nodes canvas
   window.requestAnimFrame = function()
@@ -51,7 +99,7 @@ $(window).bind('scroll', function() {
     );
   }();
 
-    var canvas = document.getElementById('canv'); 
+    var canvas = document.getElementById('canvas'); 
     
     var context = canvas.getContext('2d');
     
