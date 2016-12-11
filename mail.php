@@ -13,7 +13,9 @@
 
       // $mail->MsgHTML($_POST['company']."\n".$_POST['phone']."\n").$_POST['body']); //var must be the textarea from your form
       $mail->Body = $_POST['company']."\n";
+      $mail->Body .= $_POST['fullName']."\n";
       $mail->Body .= $_POST['phone']."\n";
+      $mail->Body .= $_POST['email']."\n";
       $mail->Body .= $_POST['body'];
 
 
