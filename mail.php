@@ -12,7 +12,7 @@
       $mail->Subject    = "PORTFOLIO MAIL!! FROM - ". $_POST['fullName'];
       $mail->MsgHTML($_POST['company']);
       $mail->MsgHTML($_POST['phone']);
-      $mail->MsgHTML($_POST['body']); //var must be the textarea from your form
+      $mail->MsgHTML($_POST['company,phone,body']); //var must be the textarea from your form
 
       if(!$mail->Send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
