@@ -6,7 +6,7 @@
 	<title>Danielle Ivy Withers</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="icon" href="images/dw.ico">
@@ -212,7 +212,8 @@
 							<a href="" class="label label-warning" rel="tooltip" title data-original-title="Demo">Demo</a>
 							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
 						</p>
-					<img src="">
+					</div>
+					<img src="images/revelry_landing.png">
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-4">
@@ -225,7 +226,7 @@
 							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
 						</p>
 					</div>
-					<img src="">
+					<img src="images/chatterDraw_landing.png">
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-4">
@@ -241,14 +242,104 @@
 					<img src="">
 				</div>
 			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h2>SnaapDog</h2>
+						<p>Ionic app that enables an open collaboration between finders, seekers, and shelters.</p>
+						<p>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="Demo">Demo</a>
+							<a href="" class="label label-warning" rel="tooltip" title data-original-title="GitHub" rel="tooltip">GitHub</a>
+						</p>
+					</div>
+					<img src="images/snaapDog_landing.png">
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- END PROJECTS SECTION -->
+	<!-- CONTACT ME -->
+	<canvas id="canvas"></canvas>
 	<div class="container-fluid" id="contact">
-	<div id="canvas"></div>
+	
 		<div class="f3 center">Contact<hr></div>
-		<div class="row">
-			
+		<div class="row center">
+			<div class="f5 bold">Feel free to contact me with any inquiries. I'll get back as soon as possible.</div><br>
+			<div class="f5 bold fa fa-envelope-o">&nbsp;d.ivy.withers@gmail.com</div><br>
+			 <form id="contact-form" method="post" onsubmit="return validateForm();" action="mail.php" data-toggle="validator" role="form">
+                <div class="controls col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Full Name *</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-id-card-o" aria-hidden="true"></i></span>
+                                    <input type="text" name="fullName" class="form-control" placeholder="Please enter your Full Name" required data-required-error="Please enter a name...">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
+            					<div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Company</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-building" aria-hidden="true"></i></span>
+                                    <input type="text" name="company" class="form-control" data-required-error="This information would be helpful." placeholder="Please include">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group has-feedback">
+                                <label for="form_email">Email *</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-send" aria-hidden="true"></i></span>
+                                    <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Please enter your email" required data-required-error="I'll need a valid email to reach you!">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group has-feedback">
+                                <label for="form_phone">Phone</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                    <input type="tel" name="phone" class="form-control" data-required-error="This doesn't appear to be a valid number" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="Optional, but helpful">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group has-feedback">
+                                <label for="form_message">Message *</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                                    <textarea name="message" data-minlength="80" class="form-control" placeholder="I'd love to hear from you!" rows="4" required data-required-error="Don't forget to include a message! (Minimum 80 Characters)"></textarea>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                </div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
 		</div>
 	</div>
 <!-- jQuery incl for video -->

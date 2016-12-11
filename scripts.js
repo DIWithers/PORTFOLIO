@@ -109,17 +109,17 @@ var W = window.innerWidth, H = window.innerHeight;
 
   var particle_count = 60,
     particles = [],
-    // colors   = ["#04A2F7", "#0087D0", "#438AB0"];
-    colors =["#fff", "#84c341"];
+    colors   = ["#4DA422", "#256E27", "#143234", "#15233E"];
+    // colors =["#fff", "#84c341", "#C0C0C0"];
     function Particle()
     {
 
-        this.radius = Math.round((Math.random()*5)+5);
+        this.radius = Math.round((Math.random()*4)+4);
         this.x = Math.floor((Math.random() * canvas.width/2) + this.radius); 
         this.y =  Math.floor((Math.random() * canvas.height/2) + this.radius); 
         this.color = colors[Math.round(Math.random()*colors.length)];
-        this.speedx = Math.round((Math.random()*201)+0)/100;
-        this.speedy = Math.round((Math.random()*201)+0)/100;
+        this.speedx = Math.round((Math.random()*100)+0)/100;
+        this.speedy = Math.round((Math.random()*100)+0)/100;
 
         switch (Math.round(Math.random()*colors.length))
         {
@@ -213,5 +213,5 @@ var W = window.innerWidth, H = window.innerHeight;
     }
    
     animate(); 
-////---------end canvaz(nodes)
+////---------end canvas(nodes)
 
