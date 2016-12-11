@@ -11,7 +11,9 @@
       $mail->AddAddress("d.ivy.withers@gmail.com");
       $mail->Subject    = "PORTFOLIO MAIL!! FROM - ". $_POST['fullName'];
 
-      $mail->MsgHTML($_POST['company']."\n".$_POST['phone']."\n").$_POST['body']); //var must be the textarea from your form
+      // $mail->MsgHTML($_POST['company']."\n".$_POST['phone']."\n").$_POST['body']); //var must be the textarea from your form
+      $mail->Body = $_POST['company'];
+      $mail->Body .= $_POST['body'];
 
 
       if(!$mail->Send()) {
