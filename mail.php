@@ -10,6 +10,8 @@
       $mail->SetFrom($_POST['email']); //form var must be email
       $mail->AddAddress("d.ivy.withers@gmail.com");
       $mail->Subject    = "PORTFOLIO MAIL!! FROM - ". $_POST['fullName'];
+      $mail->MsgHTML($_POST['company']);
+      $mail->MsgHTML($_POST['phone']);
       $mail->MsgHTML($_POST['body']); //var must be the textarea from your form
 
       if(!$mail->Send()) {
