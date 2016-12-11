@@ -394,6 +394,19 @@ body {
 .f10 {
 	font-size: 5px;
 }
+	#contact {
+		height: 90vh;
+		color: #5CB85C;
+	}
+	.connections img {
+		display: inline-block;
+		max-height: 90px;
+		padding: 2%;
+	}
+	.connections a {
+		display: inline-block;
+		padding: 2%;
+	}
 
 
 
@@ -535,6 +548,9 @@ body {
   		position:relative;
   		overflow:hidden;
 	}
+	.thumbnail img {
+		max-height: 25%;
+	}
 	.caption {
 		position: absolute;
     	top: 0;
@@ -581,6 +597,19 @@ body {
 .f10 {
 	font-size: 25px;
 }
+	#contact {
+		height: 90vh;
+		color: #5CB85C;
+	}
+	.connections img {
+		display: inline-block;
+		max-height: 90px;
+		padding: 2%;
+	}
+	.connections a {
+		display: inline-block;
+		padding: 2%;
+	}
 
 } /* mobile media query end */
 
