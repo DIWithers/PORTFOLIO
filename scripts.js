@@ -244,4 +244,6 @@ $(function () {
             $('#contact-form')[0].reset();
             return false;
         }
+    })
+});
    
