@@ -14,7 +14,7 @@
 
       if(!$mail->Send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
-      } else {
+      } 
       //       echo "Message sent!";
       // }
       
