@@ -12,11 +12,11 @@
       $mail->Subject    = "The Subject Line Goes Here. FROM - ". $_POST['fullName'];
       $mail->MsgHTML($_POST['body']); //var must be the textarea from your form
 
-      if(!$mail->Send()) {
-            echo "Mailer Error: " . $mail->ErrorInfo;
-      } else {
-            echo "Message sent!";
-      }
+      // if(!$mail->Send()) {
+      //       echo "Mailer Error: " . $mail->ErrorInfo;
+      // } else {
+      //       echo "Message sent!";
+      // }
       
       // header('location: /#contact');
 

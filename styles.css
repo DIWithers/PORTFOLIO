@@ -18,6 +18,15 @@ body {
 .left {
 	text-align: left;
 }
+.modal-content{
+  height: 120px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #5CB85C;
+  color: white;
+}
 
 /* ------------NAV BAR------------ */
  #nav {
