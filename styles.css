@@ -130,6 +130,9 @@ body {
 		background-color: rgba(240, 240, 240, .9);
 		margin: 2%;
 	}
+	.hideOpt {
+		display: none;
+	}
 	.section1 {
 		font-size: 30px;
 		padding: 0;
@@ -151,6 +154,7 @@ body {
 	}
 	.loves {
 		margin-bottom: 5px;
+		padding-bottom: 15px;
 	}
 	.stars img {
 		height: 30px;
