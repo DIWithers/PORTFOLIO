@@ -8,6 +8,7 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 .container-fluid {
 	margin: 0px;
@@ -16,7 +17,7 @@ body {
 	/* margin: auto; */
 }
 .thumbnail {
-	max-height: 300px;
+	/* max-height: 300px; */
 	overflow: hidden;
 }
 canvas {
@@ -47,6 +48,7 @@ canvas {
   background-color: #5CB85C;
   color: white;
 }
+
 
 /* ------------NAV BAR------------ */
  #nav {
