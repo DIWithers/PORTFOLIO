@@ -21,7 +21,7 @@ body {
 }
 canvas {
 	max-width: 100%;
-	display: none;
+	/* display: none; */
 }
 /* #projects img {
 	overflow: hidden;
