@@ -37,6 +37,9 @@ body {
   /* color: rgb(20, 17, 114); */
   color: #84c345;
 }
+.navbar-nav>.active {
+	border-bottom: 2px solid #5CB85C;
+}
 
 .navbar-brand img {
   height: 30px;
