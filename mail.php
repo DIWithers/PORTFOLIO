@@ -12,11 +12,11 @@
       $mail->Subject    = "PORTFOLIO MAIL!! FROM - ". $_POST['fullName'];
 
       // $mail->MsgHTML($_POST['company']."\n".$_POST['phone']."\n").$_POST['body']); //var must be the textarea from your form
-      $mail->Body = $_POST['company']."\n";
-      $mail->Body .= $_POST['fullName']."\n";
-      $mail->Body .= $_POST['phone']."\n";
-      $mail->Body .= $_POST['email']."\n";
-      $mail->Body .= $_POST['body'];
+      $mail->Body = "COMPANY: ".$_POST['company']."\n";
+      $mail->Body .= "FULL NAME: ".$_POST['fullName']."\n";
+      $mail->Body .= "PHONE: "$._POST['phone']."\n";
+      $mail->Body .= "EMAIL: ".$_POST['email']."\n";
+      $mail->Body .= "MESSAGE: ".$_POST['body'];
 
 
       if(!$mail->Send()) {
